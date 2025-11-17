@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e5b391197d4eb3343b0c5845673f2830
+guid: 97b817a202c3d614c92061939f6a147e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1984422160540752062
-    second: City background_0
+      213: 6210345211083621158
+    second: FujiWara_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: City background_0
+      name: FujiWara_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 2
         width: 1024
-        height: 346
+        height: 1017
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb8d17be0751a8b10800000000000000
-      internalID: 1984422160540752062
+      spriteID: 623003fc0149f2650800000000000000
+      internalID: 6210345211083621158
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      City background_0: 1984422160540752062
+      FujiWara_0: 6210345211083621158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

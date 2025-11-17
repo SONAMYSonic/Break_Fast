@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e5b391197d4eb3343b0c5845673f2830
+guid: 3f9991c24f6bd374eb77ca7a172c0dd7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1984422160540752062
-    second: City background_0
+      213: 5014636096960209065
+    second: StopSign_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: City background_0
+      name: StopSign_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 346
+        x: 1
+        y: 434
+        width: 468
+        height: 448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb8d17be0751a8b10800000000000000
-      internalID: 1984422160540752062
+      spriteID: 9a02a2526f0979540800000000000000
+      internalID: 5014636096960209065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StopSign_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 469
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512fdadfe0ce69a41a4f165124676882
+      internalID: -850670648
       vertices: []
       indices: 
       edges: []
@@ -138,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 1a86884e3bd3e564fb4440b2a11e2fc5
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +170,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      City background_0: 1984422160540752062
+      StopSign_0: 5014636096960209065
+      StopSign_1: -850670648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

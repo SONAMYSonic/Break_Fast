@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: e5b391197d4eb3343b0c5845673f2830
+guid: b790a1a9b6ab7db40b172d7b5d75d729
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1984422160540752062
-    second: City background_0
+      213: 6744783575394054471
+    second: Doro_0
+  - first:
+      213: 4486761538838576453
+    second: Doro_1
+  - first:
+      213: -2548315916367763379
+    second: Doro_2
+  - first:
+      213: -4510692441682842237
+    second: Doro_3
+  - first:
+      213: -5868511624132347138
+    second: Doro_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: City background_0
+      name: Doro_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 346
+        x: 53
+        y: 69
+        width: 855
+        height: 829
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb8d17be0751a8b10800000000000000
-      internalID: 1984422160540752062
+      spriteID: 741704a2de84a9d50800000000000000
+      internalID: 6744783575394054471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doro_1
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 69
+        width: 121
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54dbb5209dd244e30800000000000000
+      internalID: 4486761538838576453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doro_2
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 69
+        width: 473
+        height: 890
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48ec65fc2092acd0800000000000000
+      internalID: -2548315916367763379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doro_3
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 186
+        width: 92
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d647a7f1dc661c0800000000000000
+      internalID: -4510692441682842237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doro_4
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 69
+        width: 92
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa375345cbde8ea0800000000000000
+      internalID: -5868511624132347138
       vertices: []
       indices: 
       edges: []
@@ -138,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 8213c65dee417bb49976d2090364ee20
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      City background_0: 1984422160540752062
+      Doro_0: 6744783575394054471
+      Doro_1: 4486761538838576453
+      Doro_2: -2548315916367763379
+      Doro_3: -4510692441682842237
+      Doro_4: -5868511624132347138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

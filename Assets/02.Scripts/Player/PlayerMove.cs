@@ -116,7 +116,7 @@ public class PlayerMove : MonoBehaviour
 
         if (desiredIndex == _currentLaneIndex)
         {
-            // ³í¸®»ó ÀÌ ·¹ÀÎ¿¡ ÀÖÁö¸¸, ½ÇÁ¦ À§Ä¡°¡ ¾î±ß³ª ÀÖ´Ù¸é ´Ù½Ã ±× ·¹ÀÎÀ¸·Î Á¤·Ä
+            // ë…¼ë¦¬ìƒ ì´ ë ˆì¸ì— ìˆì§€ë§Œ, ì‹¤ì œ ìœ„ì¹˜ê°€ ì–´ê¸‹ë‚˜ ìˆë‹¤ë©´ ë‹¤ì‹œ ê·¸ ë ˆì¸ìœ¼ë¡œ ì •ë ¬
             if (IsAtLanePosition(_currentLaneIndex) == false)
             {
                 SetMoveTarget(_currentLaneIndex);
@@ -173,13 +173,13 @@ public class PlayerMove : MonoBehaviour
 
         transform.position = nextPosition;
 
-        // ÀÌµ¿ Áß ¹ÚÄ¡±â
+        // ì´ë™ ì¤‘ ë°•ì¹˜ê¸°
         if (TryHitEnemyWhileMoving())
         {
             return;
         }
 
-        // ÀûÀ» ¸ø ¸¸³ª°í ¸ñÇ¥ ·¹ÀÎ µµÂø
+        // ì ì„ ëª» ë§Œë‚˜ê³  ëª©í‘œ ë ˆì¸ ë„ì°©
         var distanceToTarget = Vector3.Distance(transform.position, _targetPosition.position);
         if (distanceToTarget <= PositionTolerance)
         {
@@ -188,11 +188,6 @@ public class PlayerMove : MonoBehaviour
 
             CurrentState = PlayerState.Idle;
             _targetPosition = null;
-
-            if (_hitDuringThisMove == false)
-            {
-                _player?.OnDashMissed();
-            }
         }
     }
 
@@ -209,7 +204,7 @@ public class PlayerMove : MonoBehaviour
             return false;
         }
 
-        // ³Ë¹é ¹æÇâ °è»ê¿ë (°¡Àå ¸ÕÀú ¸ÂÀº Àû ±âÁØ)
+        // ë„‰ë°± ë°©í–¥ ê³„ì‚°ìš© (ê°€ì¥ ë¨¼ì € ë§ì€ ì  ê¸°ì¤€)
         float? contactDirection = null;
 
         foreach (var hit in hits)
@@ -220,17 +215,17 @@ public class PlayerMove : MonoBehaviour
                 continue;
             }
 
-            // 1) µ¥¹ÌÁö °è»ê
+            // 1) ë°ë¯¸ì§€ ê³„ì‚°
             enemy.OnHitByPlayer(_player.AttackPower, true);
 
-            // 2) Àû ³Ë¹é
+            // 2) ì  ë„‰ë°±
             var enemyMove = hit.GetComponent<EnemyMove>();
             if (enemyMove != null)
             {
                 if (contactDirection == null)
                 {
-                    // ÀûÀÌ ÇÃ·¹ÀÌ¾îÀÇ ¿À¸¥ÂÊ¿¡ ÀÖÀ¸¸é ¡æ ÀûÀº ¿À¸¥ÂÊ(+1)À¸·Î ³Ë¹é
-                    // ÀûÀÌ ¿ŞÂÊ¿¡ ÀÖÀ¸¸é ¡æ ÀûÀº ¿ŞÂÊ(-1)À¸·Î ³Ë¹é
+                    // ì ì´ í”Œë ˆì´ì–´ì˜ ì˜¤ë¥¸ìª½ì— ìˆìœ¼ë©´ â†’ ì ì€ ì˜¤ë¥¸ìª½(+1)ìœ¼ë¡œ ë„‰ë°±
+                    // ì ì´ ì™¼ìª½ì— ìˆìœ¼ë©´ â†’ ì ì€ ì™¼ìª½(-1)ìœ¼ë¡œ ë„‰ë°±
                     contactDirection =
                         enemy.transform.position.x - transform.position.x > 0f
                             ? 1f
@@ -241,24 +236,24 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        // 3) ÇÃ·¹ÀÌ¾î ÀÚ±â ¿¬Ãâ
+        // 3) í”Œë ˆì´ì–´ ìê¸° ì—°ì¶œ
         _hitDuringThisMove = true;
         _player?.OnDashHitEnemy();
 
-        // 4) °ø°İ Á÷ÈÄ¿¡´Â Idle ÇÇ°İ ÆÇÁ¤ Àá½Ã ºñÈ°¼ºÈ­
+        // 4) ê³µê²© ì§í›„ì—ëŠ” Idle í”¼ê²© íŒì • ì ì‹œ ë¹„í™œì„±í™”
         _idleHitTimer = _idleHitCooldown;
 
-        // 5) ÇÃ·¹ÀÌ¾î ³Ë¹é (´ë½Ã ¹İ´ë ¹æÇâ)
+        // 5) í”Œë ˆì´ì–´ ë„‰ë°± (ëŒ€ì‹œ ë°˜ëŒ€ ë°©í–¥)
         if (contactDirection != null)
         {
-            // ÀûÀÌ ¿À¸¥ÂÊ(+1)À¸·Î ¹Ğ·Á³µ´Ù¸é ¡æ ÇÃ·¹ÀÌ¾î´Â ¿ŞÂÊ(-1)À¸·Î ³Ë¹é
-            // ÀûÀÌ ¿ŞÂÊ(-1)À¸·Î ¹Ğ·Á³µ´Ù¸é ¡æ ÇÃ·¹ÀÌ¾î´Â ¿À¸¥ÂÊ(+1)À¸·Î ³Ë¹é
+            // ì ì´ ì˜¤ë¥¸ìª½(+1)ìœ¼ë¡œ ë°€ë ¤ë‚¬ë‹¤ë©´ â†’ í”Œë ˆì´ì–´ëŠ” ì™¼ìª½(-1)ìœ¼ë¡œ ë„‰ë°±
+            // ì ì´ ì™¼ìª½(-1)ìœ¼ë¡œ ë°€ë ¤ë‚¬ë‹¤ë©´ â†’ í”Œë ˆì´ì–´ëŠ” ì˜¤ë¥¸ìª½(+1)ìœ¼ë¡œ ë„‰ë°±
             float playerKnockDirection = -contactDirection.Value;
             StartKnockback(playerKnockDirection);
         }
         else
         {
-            // È¤½Ã ¸ğ¸¦ ¹æ¾î: ÀûÀÌ ÇÏ³ªµµ ¾ø´Âµ¥ ¿©±â µé¾î¿Â °æ¿ì
+            // í˜¹ì‹œ ëª¨ë¥¼ ë°©ì–´: ì ì´ í•˜ë‚˜ë„ ì—†ëŠ”ë° ì—¬ê¸° ë“¤ì–´ì˜¨ ê²½ìš°
             CurrentState = PlayerState.Idle;
         }
 
@@ -268,7 +263,7 @@ public class PlayerMove : MonoBehaviour
         return true;
     }
 
-    // ---------------- Idle Hit (°¡¸¸È÷ ÀÖÀ» ¶§ µéÀÌ¹ŞÈû) ----------------
+    // ---------------- Idle Hit (ê°€ë§Œíˆ ìˆì„ ë•Œ ë“¤ì´ë°›í˜) ----------------
 
     private void HandleIdleCollision()
     {
@@ -306,7 +301,7 @@ public class PlayerMove : MonoBehaviour
                 continue;
             }
 
-            // ÇÃ·¹ÀÌ¾î´Â °¡¸¸È÷ ÀÖ°í, ÀûÀÌ µéÀÌ¹ŞÀº »óÈ² ¡æ ÀûÀº ¹İ°ª µ¥¹ÌÁö
+            // í”Œë ˆì´ì–´ëŠ” ê°€ë§Œíˆ ìˆê³ , ì ì´ ë“¤ì´ë°›ì€ ìƒí™© â†’ ì ì€ ë°˜ê°’ ë°ë¯¸ì§€
             enemy.OnHitByPlayer(_player.AttackPower, false);
 
             var distance = Mathf.Abs(hit.transform.position.x - transform.position.x);
@@ -322,16 +317,16 @@ public class PlayerMove : MonoBehaviour
 
         if (enemyForKnockback != null)
         {
-            // ÇÃ·¹ÀÌ¾î ±âÁØ ³Ë¹é ¹æÇâ
+            // í”Œë ˆì´ì–´ ê¸°ì¤€ ë„‰ë°± ë°©í–¥
             float playerKnockDirection =
                 transform.position.x - enemyForKnockback.transform.position.x > 0f
                     ? 1f
                     : -1f;
 
-            // ÇÃ·¹ÀÌ¾î ³Ë¹é
+            // í”Œë ˆì´ì–´ ë„‰ë°±
             StartKnockback(playerKnockDirection);
 
-            // Àû ³Ë¹é (ÇÃ·¹ÀÌ¾î¿Í ¹İ´ë ¹æÇâ)
+            // ì  ë„‰ë°± (í”Œë ˆì´ì–´ì™€ ë°˜ëŒ€ ë°©í–¥)
             if (enemyMoveForKnockback != null)
             {
                 float enemyKnockDirection = -playerKnockDirection;
@@ -373,7 +368,7 @@ public class PlayerMove : MonoBehaviour
         _knockbackTimer = _knockbackDuration;
         CurrentState = PlayerState.HitStun;
 
-        // ÀÌµ¿ ÁßÀÌ¾úÀ» °¡´É¼ºÀº ¾øÁö¸¸, È¤½Ã ¸ğ¸¦ ÀÌÀü Å¸°Ù Å¬¸®¾î
+        // ì´ë™ ì¤‘ì´ì—ˆì„ ê°€ëŠ¥ì„±ì€ ì—†ì§€ë§Œ, í˜¹ì‹œ ëª¨ë¥¼ ì´ì „ íƒ€ê²Ÿ í´ë¦¬ì–´
         _targetPosition = null;
     }
 

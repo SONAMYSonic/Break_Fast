@@ -48,7 +48,7 @@ public class PlayerCarController : MonoBehaviour
         }
     }
 
-    // ÀÌµ¿ Áß ¹ÚÄ¡±â ¼º°øÇßÀ» ¶§ È£Ãâ
+    // ì´ë™ ì¤‘ ë°•ì¹˜ê¸° ì„±ê³µí–ˆì„ ë•Œ í˜¸ì¶œ
     public void OnDashHitEnemy()
     {
         AddCombo();
@@ -57,18 +57,13 @@ public class PlayerCarController : MonoBehaviour
         _cameraShake?.Shake();
     }
 
-    // ÀÌµ¿Çß´Âµ¥ ¾Æ¹« °Íµµ ¸ø ¸ÂÃá °æ¿ì
-    public void OnDashMissed()
-    {
-        ResetCombo();
-    }
-
-    // °¡¸¸È÷ ÀÖ´Ù°¡ Àû¿¡°Ô µéÀÌ¹ŞÈù °æ¿ì
+    // ê°€ë§Œíˆ ìˆë‹¤ê°€ ì ì—ê²Œ ë“¤ì´ë°›íŒ ê²½ìš°
     public void OnIdleHitByEnemy()
     {
         TakeDamage(_selfDamageOnIdleHit);
         _cameraShake?.Shake();
-        Debug.Log("À¸¾Ç! Àû¿¡°Ô µéÀÌ¹ŞÇû½À´Ï´Ù!");
+        ResetCombo();
+        Debug.Log("ìœ¼ì•…! ì ì—ê²Œ ë“¤ì´ë°›í˜”ìŠµë‹ˆë‹¤!");
     }
 
     public void TakeDamage(int damage)

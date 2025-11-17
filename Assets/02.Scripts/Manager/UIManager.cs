@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScore(int score, int bestScore)
     {
-        if (scoreText != null) scoreText.text = score.ToString();
+        if (scoreText != null) scoreText.text = $"Current: {score}";
         if (bestScoreText != null) bestScoreText.text = $"BEST {bestScore}";
     }
 
@@ -37,8 +37,8 @@ public class UIManager : MonoBehaviour
         else
         {
             comboText.gameObject.SetActive(true);
-            comboText.text = $"COMBO x{combo}";
-            // TODO: ¾Ö´Ï¸ŞÀÌ¼Ç(Scale Æ¨±â±â)
+            comboText.text = $"COMBO! x{combo}";
+            // TODO: ì• ë‹ˆë©”ì´ì…˜(Scale íŠ•ê¸°ê¸°)
         }
     }
 
@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
     {
         if (popupScoreText == null) return;
 
-        popupScoreText.text = $"+{addScore}";
-        // TODO: ¾ËÆÄ/À§Ä¡ ¾Ö´Ï¸ŞÀÌ¼Ç ÄÚ·çÆ¾À¸·Î
+        popupScoreText.text = $"+{addScore}!";
+        // TODO: ì•ŒíŒŒ/ìœ„ì¹˜ ì• ë‹ˆë©”ì´ì…˜ ì½”ë£¨í‹´ìœ¼ë¡œ
     }
 }

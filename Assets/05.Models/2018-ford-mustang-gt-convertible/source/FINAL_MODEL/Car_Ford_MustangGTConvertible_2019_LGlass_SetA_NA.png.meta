@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 6c9de1d5d23517f408918096e26852fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8262213970122763560
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_0
+  - first:
+      213: -2052202339224698827
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_1
+  - first:
+      213: -4038682783300904423
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_2
+  - first:
+      213: -6899652346268397930
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_3
+  - first:
+      213: -3055189917781872708
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_4
+  - first:
+      213: 8990597264167876081
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_5
+  - first:
+      213: 2378266896894911932
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_6
+  - first:
+      213: 7883286456276236082
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_7
+  - first:
+      213: -5794757498277846693
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_8
+  - first:
+      213: -2426531566751024121
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_9
+  - first:
+      213: -5931095701357759367
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_10
+  - first:
+      213: 5278861259568948391
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_11
+  - first:
+      213: -1179637034354257031
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_12
+  - first:
+      213: -68463806538503390
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_13
+  - first:
+      213: -1208847202855980807
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_14
+  - first:
+      213: 7849280969107147131
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_15
+  - first:
+      213: 2987268241924898564
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_16
+  - first:
+      213: -7859492024479708539
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_17
+  - first:
+      213: -5746594392072553059
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_18
+  - first:
+      213: -2676363115329943762
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_19
+  - first:
+      213: -8337424078370208182
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_20
+  - first:
+      213: 5016574480871953892
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_21
+  - first:
+      213: 3495277817735107238
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_22
+  - first:
+      213: 2022410475173765992
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_23
+  - first:
+      213: -4543924570251690302
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_24
+  - first:
+      213: 6889127270517597983
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_25
+  - first:
+      213: 5531003781909658283
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_26
+  - first:
+      213: -5146704091336491335
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_27
+  - first:
+      213: -826885734905078383
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_28
+  - first:
+      213: 8033360561555321061
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_29
+  - first:
+      213: -8018729609816306230
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_30
+  - first:
+      213: -4692745046964984779
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_31
+  - first:
+      213: 3974135575960776730
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_32
+  - first:
+      213: 4978844969384292389
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_33
+  - first:
+      213: 4831765023579102930
+    second: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_0
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 915
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d210945b28b65d80800000000000000
+      internalID: -8262213970122763560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_1
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 873
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530494378dc1583e0800000000000000
+      internalID: -2052202339224698827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_2
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 880
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a1ddc0867b3f7c0800000000000000
+      internalID: -4038682783300904423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 697
+        width: 128
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e4bfa3fb28f30a0800000000000000
+      internalID: -6899652346268397930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 674
+        width: 286
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfa145f4f8c995d0800000000000000
+      internalID: -3055189917781872708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_5
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 850
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f53359d39405cc70800000000000000
+      internalID: 8990597264167876081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_6
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 841
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5ed72642d410120800000000000000
+      internalID: 2378266896894911932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_7
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 837
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2373ef8b34f076d60800000000000000
+      internalID: 7883286456276236082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_8
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 787
+        width: 425
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b512e9bd1c2e49fa0800000000000000
+      internalID: -5794757498277846693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_9
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 709
+        width: 434
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c7887756a335ed0800000000000000
+      internalID: -2426531566751024121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_10
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 694
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97479b742e380bda0800000000000000
+      internalID: -5931095701357759367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_11
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 434
+        width: 107
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4ad23d858424940800000000000000
+      internalID: 5278861259568948391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_12
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 679
+        width: 45
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9735b630e5611afe0800000000000000
+      internalID: -1179637034354257031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_13
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 427
+        width: 100
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b2d4bd784cc0ff0800000000000000
+      internalID: -68463806538503390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_14
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 678
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f07b0eafdf493fe0800000000000000
+      internalID: -1208847202855980807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_15
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 425
+        width: 95
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b798dd1447f3eec60800000000000000
+      internalID: 7849280969107147131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_16
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 694
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f3db883a8e47920800000000000000
+      internalID: 2987268241924898564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 651
+        width: 184
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a0fd525a97de290800000000000000
+      internalID: -7859492024479708539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 662
+        width: 185
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d7340e8deff30b0800000000000000
+      internalID: -5746594392072553059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_19
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 636
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e270dc43de5abdad0800000000000000
+      internalID: -2676363115329943762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_20
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 624
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4684fa69f48b4c80800000000000000
+      internalID: -8337424078370208182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_21
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 603
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e599a159e37e9540800000000000000
+      internalID: 5016574480871953892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_22
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 563
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2576d08a8b18030800000000000000
+      internalID: 3495277817735107238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_23
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 565
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863e2caac9b011c10800000000000000
+      internalID: 2022410475173765992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_24
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 543
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce7af79dacb0f0c0800000000000000
+      internalID: -4543924570251690302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_25
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 535
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1768ab90c81b9f50800000000000000
+      internalID: 6889127270517597983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_26
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 441
+        width: 453
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa311892a212cc40800000000000000
+      internalID: 5531003781909658283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_27
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 488
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9beb6d7b5eb3398b0800000000000000
+      internalID: -5146704091336491335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_28
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 521
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d152d1ecf4684f0800000000000000
+      internalID: -826885734905078383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_29
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 473
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e033204eda3c7f60800000000000000
+      internalID: 8033360561555321061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_30
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 482
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd0ef8a7efb7b090800000000000000
+      internalID: -8018729609816306230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_31
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 444
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534ad263e3500eeb0800000000000000
+      internalID: -4692745046964984779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_32
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 137
+        width: 288
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10726e1047f62730800000000000000
+      internalID: 3974135575960776730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_33
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 79
+        width: 422
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52034efde19681540800000000000000
+      internalID: 4978844969384292389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_34
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 9
+        width: 654
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ded69c60b0ed0340800000000000000
+      internalID: 4831765023579102930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_0: -8262213970122763560
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_1: -2052202339224698827
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_10: -5931095701357759367
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_11: 5278861259568948391
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_12: -1179637034354257031
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_13: -68463806538503390
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_14: -1208847202855980807
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_15: 7849280969107147131
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_16: 2987268241924898564
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_17: -7859492024479708539
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_18: -5746594392072553059
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_19: -2676363115329943762
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_2: -4038682783300904423
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_20: -8337424078370208182
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_21: 5016574480871953892
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_22: 3495277817735107238
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_23: 2022410475173765992
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_24: -4543924570251690302
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_25: 6889127270517597983
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_26: 5531003781909658283
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_27: -5146704091336491335
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_28: -826885734905078383
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_29: 8033360561555321061
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_3: -6899652346268397930
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_30: -8018729609816306230
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_31: -4692745046964984779
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_32: 3974135575960776730
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_33: 4978844969384292389
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_34: 4831765023579102930
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_4: -3055189917781872708
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_5: 8990597264167876081
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_6: 2378266896894911932
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_7: 7883286456276236082
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_8: -5794757498277846693
+      Car_Ford_MustangGTConvertible_2019_LGlass_SetA_NA_9: -2426531566751024121
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

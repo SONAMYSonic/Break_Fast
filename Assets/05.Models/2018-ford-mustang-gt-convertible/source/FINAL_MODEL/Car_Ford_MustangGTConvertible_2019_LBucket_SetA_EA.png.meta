@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 3a5cad178ce79ac4189c2ae759d97e29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1205270896351380860
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_0
+  - first:
+      213: -8666394504276792294
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_1
+  - first:
+      213: 7160886101853113846
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_2
+  - first:
+      213: 5031320485875121625
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_3
+  - first:
+      213: 7737003770624325337
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_4
+  - first:
+      213: -7884111579714462
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_5
+  - first:
+      213: 3416321512931259536
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_6
+  - first:
+      213: -4245233649850180635
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_7
+  - first:
+      213: -1527804955026880406
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_8
+  - first:
+      213: 5356925000285717686
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_9
+  - first:
+      213: 950428381214176728
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_10
+  - first:
+      213: -6007152783945539280
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_11
+  - first:
+      213: 3609969000573071606
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_12
+  - first:
+      213: -1685350118042403494
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_13
+  - first:
+      213: -4393542785222380378
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_14
+  - first:
+      213: -7509476170291987950
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_15
+  - first:
+      213: -8283409551686675841
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_16
+  - first:
+      213: -7728969057801877834
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_17
+  - first:
+      213: 4623773257143448146
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_18
+  - first:
+      213: -2975546103431293597
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_19
+  - first:
+      213: -3525720884129126996
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_20
+  - first:
+      213: 80662593272839942
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_21
+  - first:
+      213: 5726006257811729853
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_22
+  - first:
+      213: -6262100072377227967
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_23
+  - first:
+      213: -5309390594100155833
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_24
+  - first:
+      213: -3915209858554080656
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_25
+  - first:
+      213: 5732398551945488211
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_26
+  - first:
+      213: -3036811176825553663
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_27
+  - first:
+      213: -7384879922233028223
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_28
+  - first:
+      213: -9001852370010273269
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_29
+  - first:
+      213: 97817213807715110
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_30
+  - first:
+      213: 1324543691540434542
+    second: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_0
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 575
+        width: 19
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48afbdc6184064fe0800000000000000
+      internalID: -1205270896351380860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_1
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 349
+        width: 90
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c2f296d18cab780800000000000000
+      internalID: -8666394504276792294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 498
+        width: 66
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd8cf938f3906360800000000000000
+      internalID: 7160886101853113846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_3
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 623
+        width: 65
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd7bb72357d2d540800000000000000
+      internalID: 5031320485875121625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 60
+        width: 243
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d6bbeddfeb5f5b60800000000000000
+      internalID: 7737003770624325337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 336
+        width: 108
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cebe9317df3eff0800000000000000
+      internalID: -7884111579714462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_6
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 555
+        width: 110
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094fac8c056396f20800000000000000
+      internalID: 3416321512931259536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_7
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 300
+        width: 148
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb1528dc76e515c0800000000000000
+      internalID: -4245233649850180635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_8
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 526
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a688a81fc752ccae0800000000000000
+      internalID: -1527804955026880406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_9
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 530
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b48072d7ee975a40800000000000000
+      internalID: 5356925000285717686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_10
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 537
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d578beb399903d00800000000000000
+      internalID: 950428381214176728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 529
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0316d69ce5e42aca0800000000000000
+      internalID: -6007152783945539280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_12
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 502
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f07459fdaf291230800000000000000
+      internalID: 3609969000573071606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_13
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 458
+        width: 42
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d7beb3ffe6c98e0800000000000000
+      internalID: -1685350118042403494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_14
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 515
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4f6556d100703c0800000000000000
+      internalID: -4393542785222380378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_15
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 496
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a3c74c53bf8c790800000000000000
+      internalID: -7509476170291987950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_16
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 473
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7253ae66ea6b0d80800000000000000
+      internalID: -8283409551686675841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_17
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 512
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6cbbd779f2db490800000000000000
+      internalID: -7728969057801877834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_18
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 517
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2527cf19741fa2040800000000000000
+      internalID: 4623773257143448146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_19
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 418
+        width: 59
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3651e24859cb4b6d0800000000000000
+      internalID: -2975546103431293597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_20
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 348
+        width: 73
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5ae44398f121fc0800000000000000
+      internalID: -3525720884129126996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_21
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 49
+        width: 102
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f70b283329e1100800000000000000
+      internalID: 80662593272839942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_22
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 327
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd28829a5cd67f40800000000000000
+      internalID: 5726006257811729853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_23
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 57
+        width: 94
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145e106892d8819a0800000000000000
+      internalID: -6262100072377227967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_24
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 291
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a2cd092614156b0800000000000000
+      internalID: -5309390594100155833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_25
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 53
+        width: 86
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072d6c790616aa9c0800000000000000
+      internalID: -3915209858554080656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_26
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 49
+        width: 91
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357aca78c129d8f40800000000000000
+      internalID: 5732398551945488211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_27
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 52
+        width: 38
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d706b03541bd5d0800000000000000
+      internalID: -3036811176825553663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_28
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 130
+        width: 66
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181d26666d2a38990800000000000000
+      internalID: -7384879922233028223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_29
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 153
+        width: 36
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a870d96fef21380800000000000000
+      internalID: -9001852370010273269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_30
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 67
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6236de9dc348b5100800000000000000
+      internalID: 97817213807715110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_31
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 17
+        width: 480
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e80cf3879b16210800000000000000
+      internalID: 1324543691540434542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_0: -1205270896351380860
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_1: -8666394504276792294
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_10: 950428381214176728
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_11: -6007152783945539280
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_12: 3609969000573071606
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_13: -1685350118042403494
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_14: -4393542785222380378
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_15: -7509476170291987950
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_16: -8283409551686675841
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_17: -7728969057801877834
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_18: 4623773257143448146
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_19: -2975546103431293597
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_2: 7160886101853113846
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_20: -3525720884129126996
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_21: 80662593272839942
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_22: 5726006257811729853
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_23: -6262100072377227967
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_24: -5309390594100155833
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_25: -3915209858554080656
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_26: 5732398551945488211
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_27: -3036811176825553663
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_28: -7384879922233028223
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_29: -9001852370010273269
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_3: 5031320485875121625
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_30: 97817213807715110
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_31: 1324543691540434542
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_4: 7737003770624325337
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_5: -7884111579714462
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_6: 3416321512931259536
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_7: -4245233649850180635
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_8: -1527804955026880406
+      Car_Ford_MustangGTConvertible_2019_LBucket_SetA_EA_9: 5356925000285717686
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1636611928786310323}
   m_Layer: 6
   m_Name: Enemy_Van
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,17 +69,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00067681074, y: 0.0009874105}
+  m_Offset: {x: 0.016209126, y: -0.0021189451}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.22, y: 1.268}
+    oldSize: {x: 2.6833334, y: 1.0566666}
     newSize: {x: 3.22, y: 1.268}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.113326, y: 1.2738969}
+  m_Size: {x: 2.56038, y: 1.0440199}
   m_EdgeRadius: 0
 --- !u!114 &7489071626161662918
 MonoBehaviour:
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7d9aa59314cd4468bf95a7e6518528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scoreValue: 100
-  _maxHp: 30
+  _scoreValue: 300
+  _maxHp: 25
   _currentHp: 0
 --- !u!114 &6491284019591088112
 MonoBehaviour:
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0320390f99d6efa46b9a1f14448af3f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
+  _moveSpeed: 2.2
   _knockbackDistance: 1.7
   _knockbackDuration: 0.1
 --- !u!212 &1636611928786310323

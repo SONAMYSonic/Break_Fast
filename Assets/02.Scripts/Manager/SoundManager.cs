@@ -20,7 +20,7 @@ public class SoundManager : MonoBehaviour
 
     [Header("BGM")]
     [SerializeField] private AudioSource _bgmSource;
-    [SerializeField] private AudioClip _mainBgm;
+    [SerializeField] private AudioClip[] _mainBgm;
 
     [Header("SFX Player")]
     [SerializeField] private AudioSource _sfxSource;  // 2D SFX
@@ -28,6 +28,18 @@ public class SoundManager : MonoBehaviour
     [Header("필살기 사운드")]
     public AudioSource UltimateVoiceSource;
     public AudioClip[] UltimateVoiceClips;
+
+    [Header("Countdown Voices")]
+    [SerializeField] private AudioSource _countdownSource;
+    [SerializeField] private AudioClip[] _countdownVoiceClips; // 3,2,1 용
+    [SerializeField] private AudioClip[] _goVoiceClips;        // GO! 용
+    private int _countdownIndex = 0;
+
+    [Header("게임오버 BGM")]
+    public AudioClip GameOverBgmSource;
+
+    [Header("Ui 클릭")]
+    public AudioClip UIClick;
 
     [Serializable]
     private struct SfxEntry
@@ -59,11 +71,8 @@ public class SoundManager : MonoBehaviour
             if (entry.Clips == null || entry.Clips.Length == 0) continue;
             _sfxTable[entry.Type] = entry.Clips;
         }
-    }
 
-    private void Start()
-    {
-        PlayBgm();
+        _countdownIndex = UnityEngine.Random.Range(0, _countdownVoiceClips.Length); // 랜덤 시작
     }
 
     // ---------------- BGM ----------------
@@ -73,13 +82,20 @@ public class SoundManager : MonoBehaviour
         if (_mainBgm == null || _bgmSource == null) return;
 
         _bgmSource.loop = loop;
-        _bgmSource.clip = _mainBgm;
+        _bgmSource.clip = _mainBgm[UnityEngine.Random.Range(0, _mainBgm.Length)];
         _bgmSource.Play();
     }
 
     public void StopBgm()
     {
         _bgmSource?.Stop();
+    }
+
+    public void PlayGameOverBgm()
+    {
+        _bgmSource.clip = GameOverBgmSource;
+        _bgmSource.volume = 0.5f;
+        _bgmSource.Play();
     }
 
     // ---------------- SFX ----------------
@@ -110,5 +126,31 @@ public class SoundManager : MonoBehaviour
         if (UltimateVoiceSource == null || UltimateVoiceClips.Length == 0) return;
         var clip = UltimateVoiceClips[UnityEngine.Random.Range(0, UltimateVoiceClips.Length)];
         UltimateVoiceSource.PlayOneShot(clip);
+    }
+
+    public void PlayRandomCountdownVoice()
+    {
+        var clip = _countdownVoiceClips[_countdownIndex];
+        if (clip != null)
+            _countdownSource.PlayOneShot(clip);
+    }
+
+    public void PlayRandomGoVoice()
+    {
+        var clip = _goVoiceClips[_countdownIndex];
+        if (clip != null)
+            _countdownSource.PlayOneShot(clip);
+    }
+
+    public void PlayUiClickSound()
+    {
+        _sfxSource.volume = 1f;
+        _sfxSource.PlayOneShot(UIClick);
+    }
+
+    public void PlayCarDash()
+    {
+        _sfxSource.clip = _sfxTable[SfxType.CarDash][0];
+        _sfxSource.Play();
     }
 }

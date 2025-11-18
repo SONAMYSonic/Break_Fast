@@ -6,12 +6,12 @@ public class CameraShake : MonoBehaviour
     [SerializeField] private float duration = 0.1f;
     [SerializeField] private float magnitude = 0.2f;
 
-    private Vector3 _originalPos;
     private Coroutine _shakeRoutine;
+    private CameraZoomController _zoomController;
 
     private void Awake()
     {
-        _originalPos = transform.localPosition;
+        _zoomController = GetComponent<CameraZoomController>();
     }
 
     public void Shake()
@@ -31,12 +31,27 @@ public class CameraShake : MonoBehaviour
         {
             float offsetX = Random.Range(-1f, 1f) * magnitude;
             float offsetY = Random.Range(-1f, 1f) * magnitude;
-            transform.localPosition = _originalPos + new Vector3(offsetX, offsetY, 0f);
+            Vector3 offset = new Vector3(offsetX, offsetY, 0f);
+
+            if (_zoomController != null)
+            {
+                _zoomController.SetShakeOffset(offset);
+            }
+            else
+            {
+                // 혹시 줌컨트롤러가 없을 때를 대비한 fallback (옵션)
+                transform.localPosition += offset;
+            }
 
             elapsed += Time.unscaledDeltaTime;
             yield return null;
         }
 
-        transform.localPosition = _originalPos;
+        if (_zoomController != null)
+        {
+            _zoomController.SetShakeOffset(Vector3.zero);
+        }
+
+        _shakeRoutine = null;
     }
 }

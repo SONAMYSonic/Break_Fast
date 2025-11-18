@@ -16,6 +16,7 @@ public class PlayerCarController : MonoBehaviour
     [Header("Ultimate Settings")]
     [SerializeField] private int _ultimateRequiredCombo = 20;   // 궁극기 필요 콤보
     [SerializeField] private float _ultimateDuration = 5f;      // 궁극기 지속 시간
+    public GameObject UltimateTrailEffect;                     // 궁극기 이펙트 오브젝트
 
     [SerializeField] private int _currentHp;
     public int Combo { get; private set; }
@@ -29,6 +30,7 @@ public class PlayerCarController : MonoBehaviour
 
     private GameManager _gameManager;
     private CameraShake _cameraShake;
+    private CameraZoomController _cameraZoom;
 
     private void Awake()
     {
@@ -36,6 +38,7 @@ public class PlayerCarController : MonoBehaviour
         _gameManager = FindFirstObjectByType<GameManager>();
         _cameraShake = FindFirstObjectByType<CameraShake>();
         _gameManager?.OnHpChanged(_currentHp, _maxHp);
+        _cameraZoom = FindFirstObjectByType<CameraZoomController>();
     }
 
     private void Update()
@@ -100,6 +103,8 @@ public class PlayerCarController : MonoBehaviour
         IsUltimateActive = true;
         _ultimateTimer = _ultimateDuration;
         // 필요하면 여기서 VFX 시작 등 추가 가능
+        _cameraZoom?.SetUltimateZoom(true);
+        UltimateTrailEffect.SetActive(true);
     }
 
     private void EndUltimate()
@@ -108,6 +113,8 @@ public class PlayerCarController : MonoBehaviour
         // 필살기 UI 끄기
         _gameManager?.ShowUltimateCutIn(false);
         // 종료 VFX/사운드 필요하면 여기서
+        _cameraZoom?.SetUltimateZoom(false);
+        UltimateTrailEffect.SetActive(false);
     }
 
     // ---------------- 콤보/데미지 ----------------

@@ -38,6 +38,8 @@ public class PlayerMove : MonoBehaviour
     [Header("Car Model")]
     [SerializeField] private Transform _carModelTransform;
 
+    [SerializeField] private bool _canControl = true;
+
     public PlayerState CurrentState { get; private set; } = PlayerState.Idle;
 
     private readonly Transform[] _lanes = new Transform[3];
@@ -67,6 +69,11 @@ public class PlayerMove : MonoBehaviour
         _player = GetComponent<PlayerCarController>();
     }
 
+    public void SetCanControl(bool canControl)
+    {
+        _canControl = canControl;
+    }
+
     private void Update()
     {
         HandleInput();
@@ -88,6 +95,9 @@ public class PlayerMove : MonoBehaviour
 
     private void HandleInput()
     {
+        if (!_canControl)
+            return;
+
         if (CurrentState != PlayerState.Idle)
             return;
 
@@ -95,6 +105,7 @@ public class PlayerMove : MonoBehaviour
         {
             _carModelTransform.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
             DashDirection(-1);
+            //SoundManager.Instance.PlayCarDash();
         }
             
 
@@ -102,6 +113,7 @@ public class PlayerMove : MonoBehaviour
         {
             _carModelTransform.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             DashDirection(1);
+            //SoundManager.Instance.PlayCarDash();
         }
             
     }

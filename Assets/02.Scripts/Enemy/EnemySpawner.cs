@@ -15,7 +15,7 @@ public class EnemySpawner : MonoBehaviour
     [Header("Spawn Settings")]
     [SerializeField] private float _startSpawnInterval = 2f;
     [SerializeField] private float _minSpawnInterval = 0.4f;
-    [SerializeField] private float _difficultyRampDuration = 60f;   // 이 시간 동안 점점 스폰 간격 감소
+    [SerializeField] private float _difficultyRampDuration = 90f;   // 이 시간 동안 점점 스폰 간격 감소
 
     private float _spawnTimer;
     private float _elapsedTime;

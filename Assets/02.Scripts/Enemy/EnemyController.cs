@@ -32,23 +32,28 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 플레이어가 적에게 대미지를 줄 때 호출.
-    /// baseDamage: 플레이어 공격력
-    /// playerWasMoving: true면 플레이어가 이동 중 박은 것(풀 대미지),
-    ///                  false면 플레이어가 가만히 있을 때 적이 들이박은 것(대미지 절반)
-    /// </summary>
-    public void OnHitByPlayer(int baseDamage, bool playerWasMoving)
+    public void OnHitByPlayer(int baseDamage, bool playerWasMoving, bool isUltimateAttack)
     {
         if (_isDead)
         {
             return;
         }
 
-        var damage = CalculateDamage(baseDamage, playerWasMoving);
+        int damage;
+
+        if (isUltimateAttack)
+        {
+            // 궁극기면 무조건 한방
+            damage = _maxHp;
+        }
+        else
+        {
+            damage = CalculateDamage(baseDamage, playerWasMoving);
+        }
 
         ApplyDamage(damage);
     }
+
 
     private int CalculateDamage(int baseDamage, bool playerWasMoving)
     {

@@ -141,11 +141,18 @@ public class PlayerMove : MonoBehaviour
         if (_targetLanePosition == null)
             return;
 
+        // ★ 궁극기면 속도 2배
+        float speed = _moveSpeed;
+        if (_player != null && _player.IsUltimateActive)
+        {
+            speed *= 2f;
+        }
+
         // 대시 이동
         Vector3 nextPos = Vector3.MoveTowards(
             transform.position,
             _targetLanePosition.position,
-            _moveSpeed * Time.deltaTime);
+            speed * Time.deltaTime);
 
         transform.position = nextPos;
 
@@ -153,12 +160,15 @@ public class PlayerMove : MonoBehaviour
         if (TryDashHit())
             return;
 
-        // 2) 대시 이동 거리 초과 → MISS 판정
-        float dashDistance = Mathf.Abs(transform.position.x - _dashStartPos.x);
-        if (dashDistance >= _moveMaxDistanceX)
+        // ★ 궁극기일 땐 이동 거리 제한(_moveMaxDistanceX) 무시
+        if (!(_player != null && _player.IsUltimateActive))
         {
-            EndDash(miss: true);
-            return;
+            float dashDistance = Mathf.Abs(transform.position.x - _dashStartPos.x);
+            if (dashDistance >= _moveMaxDistanceX)
+            {
+                EndDash(miss: true);
+                return;
+            }
         }
 
         // 3) 목표 레인 중심까지 도달 → MISS 여부 판정
@@ -168,6 +178,7 @@ public class PlayerMove : MonoBehaviour
             EndDash(!_hitDuringDash); // 히트 안 했으면 miss
         }
     }
+
 
     // ---------------- DASH HIT ----------------
 
@@ -203,28 +214,33 @@ public class PlayerMove : MonoBehaviour
         if (closestEnemy == null)
             return false;
 
-        // HIT 처리
-        closestEnemy.OnHitByPlayer(_player.AttackPower, true);
+        bool isUltimate = _player != null && _player.IsUltimateActive;
+
+        // HIT 처리 (궁극기면 한방)
+        closestEnemy.OnHitByPlayer(_player.AttackPower, true, isUltimate);
         _player.OnDashHitEnemy();
         _hitDuringDash = true;
 
-        // 적/플레이어 넉백
-        float dir = Mathf.Sign(closestEnemy.transform.position.x - transform.position.x);
+        if (isUltimate)
+        {
+            // ★ 궁극기일 땐 넉백 없이 대시 즉시 종료 → Idle로 복귀
+            EndDash(miss: false);
+        }
+        else
+        {
+            // 평소처럼 적/플레이어 넉백
+            float dir = Mathf.Sign(closestEnemy.transform.position.x - transform.position.x);
 
-        if (closestMove != null)
-            closestMove.StartKnockback(dir);
+            if (closestMove != null)
+                closestMove.StartKnockback(dir);
 
-        StartKnockback(-dir);
-
-        // ★ 여기서 더 이상 EndDash(false)를 호출하지 않는다!
-        //    → HitStun 상태 동안 넉백 모션이 보이도록 유지.
-
-        // 대시는 여기서 끝난 것으로 처리: 목표 레인 타겟 제거 & 레인 인덱스만 업데이트
-        _targetLanePosition = null;
-        _currentLaneIndex = _targetLaneIndex;
+            StartKnockback(-dir);
+        }
 
         return true;
     }
+
+
 
     // ---------------- DASH END (MISS 전용) ----------------
 
@@ -253,6 +269,8 @@ public class PlayerMove : MonoBehaviour
         if (hits.Length == 0)
             return;
 
+        bool isUltimate = _player != null && _player.IsUltimateActive;
+
         EnemyController hitEnemy = null;
         EnemyMove hitMove = null;
         float best = float.MaxValue;
@@ -262,8 +280,7 @@ public class PlayerMove : MonoBehaviour
             var e = h.GetComponent<EnemyController>();
             if (e == null) continue;
 
-            // 플레이어가 가만히 있을 때 들이받힌 상황 → 반값 데미지
-            e.OnHitByPlayer(_player.AttackPower, false);
+            e.OnHitByPlayer(_player.AttackPower, false, isUltimate);
 
             float d = Mathf.Abs(e.transform.position.x - transform.position.x);
             if (d < best)
@@ -276,7 +293,8 @@ public class PlayerMove : MonoBehaviour
 
         _player.OnIdleHitByEnemy();
 
-        if (hitEnemy != null)
+        // 궁극기면 플레이어/적 넉백 없음
+        if (!isUltimate && hitEnemy != null)
         {
             float dir = Mathf.Sign(transform.position.x - hitEnemy.transform.position.x);
             StartKnockback(dir);
@@ -287,6 +305,7 @@ public class PlayerMove : MonoBehaviour
 
         _idleHitTimer = _idleHitCooldown;
     }
+
 
     // ---------------- KNOCKBACK ----------------
 

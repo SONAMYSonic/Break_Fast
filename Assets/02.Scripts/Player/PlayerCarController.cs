@@ -13,11 +13,19 @@ public class PlayerCarController : MonoBehaviour
     [Header("Combo Settings")]
     [SerializeField] private float _comboResetTime = 3f;
 
+    [Header("Ultimate Settings")]
+    [SerializeField] private int _ultimateRequiredCombo = 20;   // 궁극기 필요 콤보
+    [SerializeField] private float _ultimateDuration = 5f;      // 궁극기 지속 시간
+
     [SerializeField] private int _currentHp;
     public int Combo { get; private set; }
     public int AttackPower => _attackPower;
 
+    public bool IsUltimateActive { get; private set; }   // 외부에서 읽기용
+
     private float _comboTimer;
+    private float _ultimateTimer;
+    private bool _ultimateReady;                         // 콤보로 사용 가능 여부
 
     private GameManager _gameManager;
     private CameraShake _cameraShake;
@@ -27,12 +35,82 @@ public class PlayerCarController : MonoBehaviour
         _currentHp = _maxHp;
         _gameManager = FindFirstObjectByType<GameManager>();
         _cameraShake = FindFirstObjectByType<CameraShake>();
+        _gameManager?.OnHpChanged(_currentHp, _maxHp);
     }
 
     private void Update()
     {
-        UpdateComboTimer(Time.deltaTime);
+        float dt = Time.deltaTime;
+        UpdateComboTimer(dt);
+        UpdateUltimate(dt);
     }
+
+    // ---------------- 궁극기 로직 ----------------
+
+    private void UpdateUltimate(float deltaTime)
+    {
+        // 이미 궁극기 모드일 때 → 타이머 감소
+        if (IsUltimateActive)
+        {
+            _ultimateTimer -= deltaTime;
+            if (_ultimateTimer <= 0f)
+            {
+                EndUltimate();
+            }
+            return;
+        }
+
+        // 궁극기 사용 가능 여부 계산 (콤보 기준)
+        bool canUse = Combo >= _ultimateRequiredCombo;
+        if (canUse != _ultimateReady)
+        {
+            _ultimateReady = canUse;
+            _gameManager?.OnUltimateReadyChanged(_ultimateReady); // UI에 알림 (SPACE 아이콘 ON/OFF)
+        }
+
+        // 준비됐고, 스페이스 눌렀으면 → 바로 궁극기 발동
+        if (_ultimateReady && Input.GetKeyDown(KeyCode.Space))
+        {
+            ActivateUltimateImmediately();
+        }
+    }
+
+    /// <summary>
+    /// 연출 대기 없이, UI만 띄우고 바로 궁극기 발동
+    /// </summary>
+    private void ActivateUltimateImmediately()
+    {
+        // SPACE UI 숨김
+        _ultimateReady = false;
+        _gameManager?.OnUltimateReadyChanged(false);
+
+        // 콤보 소진
+        ResetCombo();
+
+        // 오른쪽 아래 필살기 UI 표시 + 보이스 재생
+        _gameManager?.ShowUltimateCutIn(true);
+        SoundManager.Instance?.PlayUltimateVoice();
+
+        // 궁극기 효과 시작
+        BeginUltimate();
+    }
+
+    private void BeginUltimate()
+    {
+        IsUltimateActive = true;
+        _ultimateTimer = _ultimateDuration;
+        // 필요하면 여기서 VFX 시작 등 추가 가능
+    }
+
+    private void EndUltimate()
+    {
+        IsUltimateActive = false;
+        // 필살기 UI 끄기
+        _gameManager?.ShowUltimateCutIn(false);
+        // 종료 VFX/사운드 필요하면 여기서
+    }
+
+    // ---------------- 콤보/데미지 ----------------
 
     private void UpdateComboTimer(float deltaTime)
     {

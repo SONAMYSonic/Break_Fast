@@ -93,4 +93,14 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public void OnUltimateReadyChanged(bool isReady)
+    {
+        uiManager.SetUltimateReady(isReady);
+    }
+
+    public void ShowUltimateCutIn(bool show)
+    {
+        uiManager.ShowUltimateCutIn(show);
+    }
 }

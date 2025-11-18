@@ -11,6 +11,7 @@ public enum SfxType
     UiClick,        // UI 클릭
     GameOver,       // 게임오버
     GetItem,       // 아이템 획득
+    UltimateVoice,  // 궁극기 보이스
 }
 
 public class SoundManager : MonoBehaviour
@@ -23,6 +24,10 @@ public class SoundManager : MonoBehaviour
 
     [Header("SFX Player")]
     [SerializeField] private AudioSource _sfxSource;  // 2D SFX
+
+    [Header("필살기 사운드")]
+    public AudioSource UltimateVoiceSource;
+    public AudioClip[] UltimateVoiceClips;
 
     [Serializable]
     private struct SfxEntry
@@ -98,5 +103,12 @@ public class SoundManager : MonoBehaviour
         var clip = clips[UnityEngine.Random.Range(0, clips.Length)];
         if (clip != null)
             AudioSource.PlayClipAtPoint(clip, pos);
+    }
+
+    public void PlayUltimateVoice()
+    {
+        if (UltimateVoiceSource == null || UltimateVoiceClips.Length == 0) return;
+        var clip = UltimateVoiceClips[UnityEngine.Random.Range(0, UltimateVoiceClips.Length)];
+        UltimateVoiceSource.PlayOneShot(clip);
     }
 }

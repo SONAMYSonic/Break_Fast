@@ -14,6 +14,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI gameOverBestScoreText;
     [SerializeField] private TextMeshProUGUI popupScoreText;
 
+    [Header("Ultimate UI")]
+    [SerializeField] private GameObject ultimateReadyHint;   // "SPACE" 아이콘/텍스트
+    [SerializeField] private GameObject ultimateCutInPanel;  // 캐릭터/움짤 패널
+
     public void UpdateHp(int current, int max)
     {
         if (hpSlider == null) return;
@@ -59,5 +63,22 @@ public class UIManager : MonoBehaviour
 
         popupScoreText.text = $"+{addScore}!";
         // TODO: 알파/위치 애니메이션 코루틴으로
+    }
+
+    public void SetUltimateReady(bool ready)
+    {
+        if (ultimateReadyHint == null) return;
+        ultimateReadyHint.SetActive(ready);
+    }
+
+    public void ShowUltimateCutIn(bool show)
+    {
+        if (ultimateCutInPanel == null) return;
+        ultimateCutInPanel.SetActive(show);
+        if (show)
+        {
+            ultimateCutInPanel.transform.DOKill(true);
+            ultimateCutInPanel.transform.DOShakePosition(0.5f, strength: 20f, vibrato: 50, randomness: 90);
+        }
     }
 }

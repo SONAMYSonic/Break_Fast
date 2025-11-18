@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private const float IdleHitDamageFactor = 0.5f;   // ÇÃ·¹ÀÌ¾î°¡ °¡¸¸È÷ ÀÖÀ» ¶§ ¹ÚÀ¸¸é ´ë¹ÌÁö Àı¹İ
+    private const float IdleHitDamageFactor = 0.5f;   // í”Œë ˆì´ì–´ê°€ ê°€ë§Œíˆ ìˆì„ ë•Œ ë°•ìœ¼ë©´ ëŒ€ë¯¸ì§€ ì ˆë°˜
 
     [Header("Score")]
     [SerializeField] private int _scoreValue = 100;
@@ -33,10 +33,10 @@ public class EnemyController : MonoBehaviour
     }
 
     /// <summary>
-    /// ÇÃ·¹ÀÌ¾î°¡ Àû¿¡°Ô ´ë¹ÌÁö¸¦ ÁÙ ¶§ È£Ãâ.
-    /// baseDamage: ÇÃ·¹ÀÌ¾î °ø°İ·Â
-    /// playerWasMoving: true¸é ÇÃ·¹ÀÌ¾î°¡ ÀÌµ¿ Áß ¹ÚÀº °Í(Ç® ´ë¹ÌÁö),
-    ///                  false¸é ÇÃ·¹ÀÌ¾î°¡ °¡¸¸È÷ ÀÖÀ» ¶§ ÀûÀÌ µéÀÌ¹ÚÀº °Í(´ë¹ÌÁö Àı¹İ)
+    /// í”Œë ˆì´ì–´ê°€ ì ì—ê²Œ ëŒ€ë¯¸ì§€ë¥¼ ì¤„ ë•Œ í˜¸ì¶œ.
+    /// baseDamage: í”Œë ˆì´ì–´ ê³µê²©ë ¥
+    /// playerWasMoving: trueë©´ í”Œë ˆì´ì–´ê°€ ì´ë™ ì¤‘ ë°•ì€ ê²ƒ(í’€ ëŒ€ë¯¸ì§€),
+    ///                  falseë©´ í”Œë ˆì´ì–´ê°€ ê°€ë§Œíˆ ìˆì„ ë•Œ ì ì´ ë“¤ì´ë°•ì€ ê²ƒ(ëŒ€ë¯¸ì§€ ì ˆë°˜)
     /// </summary>
     public void OnHitByPlayer(int baseDamage, bool playerWasMoving)
     {
@@ -57,9 +57,9 @@ public class EnemyController : MonoBehaviour
             return baseDamage;
         }
 
-        // ÇÃ·¹ÀÌ¾î°¡ °¡¸¸È÷ ÀÖÀ» ¶§ µéÀÌ¹ŞÀº °æ¿ì: ´ë¹ÌÁö Àı¹İ
+        // í”Œë ˆì´ì–´ê°€ ê°€ë§Œíˆ ìˆì„ ë•Œ ë“¤ì´ë°›ì€ ê²½ìš°: ëŒ€ë¯¸ì§€ ì ˆë°˜
         var scaledDamage = Mathf.RoundToInt(baseDamage * IdleHitDamageFactor);
-        return Mathf.Max(scaledDamage, 1); // ÃÖ¼Ò 1Àº º¸Àå
+        return Mathf.Max(scaledDamage, 1); // ìµœì†Œ 1ì€ ë³´ì¥
     }
 
     private void ApplyDamage(int damage)
@@ -78,7 +78,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            // TODO: ÇÇ°İ ÀÌÆåÆ®, »ö ¹İÂ¦ÀÓ, È÷Æ® ¾Ö´Ï¸ŞÀÌ¼Ç µî
+            // TODO: í”¼ê²© ì´í™íŠ¸, ìƒ‰ ë°˜ì§ì„, íˆíŠ¸ ì• ë‹ˆë©”ì´ì…˜ ë“±
         }
     }
 
@@ -87,7 +87,7 @@ public class EnemyController : MonoBehaviour
         _isDead = true;
 
         _gameManager?.SpawnHitEffect(transform.position);
-        _gameManager?.OnEnemyDestroyed(_scoreValue);
+        _gameManager?.OnEnemyDestroyed(_scoreValue, transform.position);
 
         Destroy(gameObject);
     }

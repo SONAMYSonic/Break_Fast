@@ -89,6 +89,19 @@ public class PlayerCarController : MonoBehaviour
         }
     }
 
+    public void Heal(int amount)
+    {
+        if (amount <= 0 || _currentHp <= 0)
+        {
+            // 죽어있거나 0이하 힐 값이면 무시
+            return;
+        }
+
+        _currentHp = Mathf.Clamp(_currentHp + amount, 0, _maxHp);
+        _gameManager?.OnHpChanged(_currentHp, _maxHp);
+        SoundManager.Instance?.PlaySfx(SfxType.GetItem);
+    }
+
     private void AddCombo()
     {
         Combo++;

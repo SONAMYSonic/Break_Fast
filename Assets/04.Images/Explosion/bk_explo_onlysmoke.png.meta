@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: a14ec92f41685174b86ddac89eeff487
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5183463980626209369
+    second: bk_explo_onlysmoke_0
+  - first:
+      213: 8589208388476821506
+    second: bk_explo_onlysmoke_1
+  - first:
+      213: 8964165588334948163
+    second: bk_explo_onlysmoke_2
+  - first:
+      213: -798263034259892908
+    second: bk_explo_onlysmoke_3
+  - first:
+      213: -2910865911922513230
+    second: bk_explo_onlysmoke_4
+  - first:
+      213: 2597132582635269219
+    second: bk_explo_onlysmoke_5
+  - first:
+      213: -6397272268133311289
+    second: bk_explo_onlysmoke_6
+  - first:
+      213: 3896648601716012869
+    second: bk_explo_onlysmoke_7
+  - first:
+      213: 2989522130577935048
+    second: bk_explo_onlysmoke_8
+  - first:
+      213: 8489482566482056726
+    second: bk_explo_onlysmoke_9
+  - first:
+      213: 1986088684146697723
+    second: bk_explo_onlysmoke_10
+  - first:
+      213: 8828577666818332775
+    second: bk_explo_onlysmoke_11
+  - first:
+      213: 3551804333249079551
+    second: bk_explo_onlysmoke_12
+  - first:
+      213: -1612735006949314899
+    second: bk_explo_onlysmoke_13
+  - first:
+      213: 7421262514107941700
+    second: bk_explo_onlysmoke_14
+  - first:
+      213: -7541506337075429489
+    second: bk_explo_onlysmoke_15
+  - first:
+      213: 4263704982703614095
+    second: bk_explo_onlysmoke_16
+  - first:
+      213: -6117066319932360417
+    second: bk_explo_onlysmoke_17
+  - first:
+      213: -1205405140175643697
+    second: bk_explo_onlysmoke_18
+  - first:
+      213: 7053086075476872509
+    second: bk_explo_onlysmoke_19
+  - first:
+      213: 966831955375082252
+    second: bk_explo_onlysmoke_20
+  - first:
+      213: 8813284161281822612
+    second: bk_explo_onlysmoke_21
+  - first:
+      213: -4834361540744130751
+    second: bk_explo_onlysmoke_22
+  - first:
+      213: -5155284607146947074
+    second: bk_explo_onlysmoke_23
+  - first:
+      213: 6663193904740662696
+    second: bk_explo_onlysmoke_24
+  - first:
+      213: 3031596315906895495
+    second: bk_explo_onlysmoke_25
+  - first:
+      213: 1920655037361594184
+    second: bk_explo_onlysmoke_26
+  - first:
+      213: 7294579698744261881
+    second: bk_explo_onlysmoke_27
+  - first:
+      213: -2589693843974364178
+    second: bk_explo_onlysmoke_28
+  - first:
+      213: 8060141194030389708
+    second: bk_explo_onlysmoke_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 10
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ae147f60d5fe740800000000000000
+      internalID: 5183463980626209369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 9
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20067f0958ff23770800000000000000
+      internalID: 8589208388476821506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 8
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f2c70cb1d176c70800000000000000
+      internalID: 8964165588334948163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_3
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 7
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4551d9deffffbe4f0800000000000000
+      internalID: -798263034259892908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 7
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2baa01320e68a97d0800000000000000
+      internalID: -2910865911922513230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 6
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c619ed25eda0420800000000000000
+      internalID: 2597132582635269219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_6
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 6
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccd47e24c25837a0800000000000000
+      internalID: -6397272268133311289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 6
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5473ec7024da31630800000000000000
+      internalID: 3896648601716012869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_8
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 5
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca4441e98aec7920800000000000000
+      internalID: 2989522130577935048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_9
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 5
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616d80e3a63b0d570800000000000000
+      internalID: 8489482566482056726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_10
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 5
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5acfea221009b10800000000000000
+      internalID: 1986088684146697723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_11
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 4
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76857a6bc98658a70800000000000000
+      internalID: 8828577666818332775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_12
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 4
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8210b093b8a4130800000000000000
+      internalID: 3551804333249079551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 4
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daee2f94e0a6e99e0800000000000000
+      internalID: -1612735006949314899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_14
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 4
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4438352efee9df660800000000000000
+      internalID: 7421262514107941700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_15
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 4
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ff24b61ff275790800000000000000
+      internalID: -7541506337075429489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_16
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 4
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88ac197719bb2b30800000000000000
+      internalID: 4263704982703614095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_17
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 4
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19fce47790db1ba0800000000000000
+      internalID: -6117066319932360417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_18
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 5
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb9669596a854fe0800000000000000
+      internalID: -1205405140175643697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_19
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 5
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d8d03ba6891e160800000000000000
+      internalID: 7053086075476872509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_20
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 5
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bc0a97a80ea6d00800000000000000
+      internalID: 966831955375082252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_21
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 5
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f87c9ff331f4a70800000000000000
+      internalID: 8813284161281822612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_22
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 5
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14fc220dac5e8ecb0800000000000000
+      internalID: -4834361540744130751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_23
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 7
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd87f2b6ffb478b0800000000000000
+      internalID: -5155284607146947074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_24
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 7
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad7d91ad8b687c50800000000000000
+      internalID: 6663193904740662696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_25
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 8
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e630889c4621a20800000000000000
+      internalID: 3031596315906895495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_26
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 9
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f9006949987aa10800000000000000
+      internalID: 1920655037361594184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_27
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 10
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc7d61769d8b3560800000000000000
+      internalID: 7294579698744261881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_28
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 10
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee364e07b2f8f0cd0800000000000000
+      internalID: -2589693843974364178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_onlysmoke_29
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 11
+        width: 39
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc99ca526bf5bdf60800000000000000
+      internalID: 8060141194030389708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bk_explo_onlysmoke_0: 5183463980626209369
+      bk_explo_onlysmoke_1: 8589208388476821506
+      bk_explo_onlysmoke_10: 1986088684146697723
+      bk_explo_onlysmoke_11: 8828577666818332775
+      bk_explo_onlysmoke_12: 3551804333249079551
+      bk_explo_onlysmoke_13: -1612735006949314899
+      bk_explo_onlysmoke_14: 7421262514107941700
+      bk_explo_onlysmoke_15: -7541506337075429489
+      bk_explo_onlysmoke_16: 4263704982703614095
+      bk_explo_onlysmoke_17: -6117066319932360417
+      bk_explo_onlysmoke_18: -1205405140175643697
+      bk_explo_onlysmoke_19: 7053086075476872509
+      bk_explo_onlysmoke_2: 8964165588334948163
+      bk_explo_onlysmoke_20: 966831955375082252
+      bk_explo_onlysmoke_21: 8813284161281822612
+      bk_explo_onlysmoke_22: -4834361540744130751
+      bk_explo_onlysmoke_23: -5155284607146947074
+      bk_explo_onlysmoke_24: 6663193904740662696
+      bk_explo_onlysmoke_25: 3031596315906895495
+      bk_explo_onlysmoke_26: 1920655037361594184
+      bk_explo_onlysmoke_27: 7294579698744261881
+      bk_explo_onlysmoke_28: -2589693843974364178
+      bk_explo_onlysmoke_29: 8060141194030389708
+      bk_explo_onlysmoke_3: -798263034259892908
+      bk_explo_onlysmoke_4: -2910865911922513230
+      bk_explo_onlysmoke_5: 2597132582635269219
+      bk_explo_onlysmoke_6: -6397272268133311289
+      bk_explo_onlysmoke_7: 3896648601716012869
+      bk_explo_onlysmoke_8: 2989522130577935048
+      bk_explo_onlysmoke_9: 8489482566482056726
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

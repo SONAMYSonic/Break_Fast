@@ -10,6 +10,7 @@ public enum SfxType
     EnemyExplode,   // 적 파괴
     UiClick,        // UI 클릭
     GameOver,       // 게임오버
+    GetItem,       // 아이템 획득
 }
 
 public class SoundManager : MonoBehaviour

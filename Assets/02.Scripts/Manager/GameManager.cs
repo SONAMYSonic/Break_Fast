@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private EnemySpawner enemySpawner;
     [SerializeField] private GameObject hitEffectPrefab;
 
+    [Header("Item Drop Settings")]
+    [SerializeField] private GameObject _healthItemPrefab;
+    [SerializeField, Range(0f, 1f)] private float _healthItemDropChance = 0.1f;
+
     private bool _isGameOver = false;
 
     private void Start()
@@ -27,10 +31,24 @@ public class GameManager : MonoBehaviour
         uiManager.PopupScore(addScore);
     }
 
-    public void OnEnemyDestroyed(int scoreValue)
+    public void OnEnemyDestroyed(int scoreValue, Vector3 enemyPosition)
     {
         Score += scoreValue;
         uiManager.UpdateScore(Score, BestScore);
+
+        TrySpawnHealthItem(enemyPosition);
+    }
+
+    private void TrySpawnHealthItem(Vector3 pos)
+    {
+        if (_healthItemPrefab == null)
+            return;
+
+        // 10% 확률
+        if (Random.value > _healthItemDropChance)
+            return;
+
+        Instantiate(_healthItemPrefab, pos, Quaternion.identity);
     }
 
     public void OnHpChanged(int current, int max)

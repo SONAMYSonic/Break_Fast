@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 13e9824d3cb31544b8f4950ff221dc02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7593862049154873508
+    second: bk_explo_smalltwo_0
+  - first:
+      213: 7694744930040811833
+    second: bk_explo_smalltwo_1
+  - first:
+      213: -7292202401459247990
+    second: bk_explo_smalltwo_2
+  - first:
+      213: -8196312395304976989
+    second: bk_explo_smalltwo_3
+  - first:
+      213: 7157288303852493072
+    second: bk_explo_smalltwo_4
+  - first:
+      213: 2290618586578870551
+    second: bk_explo_smalltwo_5
+  - first:
+      213: 8702125350364620619
+    second: bk_explo_smalltwo_6
+  - first:
+      213: -4909094076430383761
+    second: bk_explo_smalltwo_7
+  - first:
+      213: 1353706875815597041
+    second: bk_explo_smalltwo_8
+  - first:
+      213: -8404656320106549608
+    second: bk_explo_smalltwo_9
+  - first:
+      213: 3709238374390963970
+    second: bk_explo_smalltwo_10
+  - first:
+      213: -5401814959512366201
+    second: bk_explo_smalltwo_11
+  - first:
+      213: -4878702010876006660
+    second: bk_explo_smalltwo_12
+  - first:
+      213: -9128831051106509632
+    second: bk_explo_smalltwo_13
+  - first:
+      213: -7838784521824848576
+    second: bk_explo_smalltwo_14
+  - first:
+      213: 4446011157337222716
+    second: bk_explo_smalltwo_15
+  - first:
+      213: 7940170788945742497
+    second: bk_explo_smalltwo_16
+  - first:
+      213: -6995908314366428553
+    second: bk_explo_smalltwo_17
+  - first:
+      213: 1795810185569949166
+    second: bk_explo_smalltwo_18
+  - first:
+      213: 1843186074428833516
+    second: bk_explo_smalltwo_19
+  - first:
+      213: -2309564716793032800
+    second: bk_explo_smalltwo_20
+  - first:
+      213: -3627773862904631980
+    second: bk_explo_smalltwo_21
+  - first:
+      213: -8875882118437867493
+    second: bk_explo_smalltwo_22
+  - first:
+      213: -4402951108742275929
+    second: bk_explo_smalltwo_23
+  - first:
+      213: -3006830793841395057
+    second: bk_explo_smalltwo_24
+  - first:
+      213: 4049635079315416540
+    second: bk_explo_smalltwo_25
+  - first:
+      213: 7910197302540268922
+    second: bk_explo_smalltwo_26
+  - first:
+      213: 7975968310950440926
+    second: bk_explo_smalltwo_27
+  - first:
+      213: -1782456921877507039
+    second: bk_explo_smalltwo_28
+  - first:
+      213: 330136459970048206
+    second: bk_explo_smalltwo_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57cdc643be2d9690800000000000000
+      internalID: -7593862049154873508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9311250deb939ca60800000000000000
+      internalID: 7694744930040811833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 8
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8465c63d84ecca90800000000000000
+      internalID: -7292202401459247990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad37b96d49d04e80800000000000000
+      internalID: -8196312395304976989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0199f2a9acbc35360800000000000000
+      internalID: 7157288303852493072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 7
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711e0f0e779e9cf10800000000000000
+      internalID: 2290618586578870551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 6
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47a76b76e824c870800000000000000
+      internalID: 8702125350364620619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 6
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65846d62f46fdbb0800000000000000
+      internalID: -4909094076430383761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 6
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f31ef63b3559c210800000000000000
+      internalID: 1353706875815597041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 6
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89eaecc4b99ac5b80800000000000000
+      internalID: -8404656320106549608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 6
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f12dc26acd97330800000000000000
+      internalID: 3709238374390963970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 6
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783dfd31ae5e805b0800000000000000
+      internalID: -5401814959512366201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_12
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 6
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe60cc9e5e5b4cb0800000000000000
+      internalID: -4878702010876006660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_13
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 6
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc9d309680ef4180800000000000000
+      internalID: -9128831051106509632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_14
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 6
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045bcc1520b073390800000000000000
+      internalID: -7838784521824848576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_15
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 6
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e2284779763bd30800000000000000
+      internalID: 4446011157337222716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_16
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 6
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa4b038347213e60800000000000000
+      internalID: 7940170788945742497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_17
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 5
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77abcf8347a89ee90800000000000000
+      internalID: -6995908314366428553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_18
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 5
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5dce269dffbe810800000000000000
+      internalID: 1795810185569949166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 6
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceef64518ff449910800000000000000
+      internalID: 1843186074428833516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_20
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 7
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af86cd6027c2ffd0800000000000000
+      internalID: -2309564716793032800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 8
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d6f1874ee87adc0800000000000000
+      internalID: -3627773862904631980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_22
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 8
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10f44e5d3882d480800000000000000
+      internalID: -8875882118437867493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_23
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 8
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac11006b4395e2c0800000000000000
+      internalID: -4402951108742275929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_24
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 8
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ab069e2579546d0800000000000000
+      internalID: -3006830793841395057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_25
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 7
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd56e8416a1333830800000000000000
+      internalID: 4049635079315416540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_26
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 7
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a757a21698aa6cd60800000000000000
+      internalID: 7910197302540268922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_27
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 7
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf29f99be450be60800000000000000
+      internalID: 7975968310950440926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_28
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 9
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1241e089fd07347e0800000000000000
+      internalID: -1782456921877507039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_smalltwo_29
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 9
+        width: 74
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec07be77c51e49400800000000000000
+      internalID: 330136459970048206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bk_explo_smalltwo_0: -7593862049154873508
+      bk_explo_smalltwo_1: 7694744930040811833
+      bk_explo_smalltwo_10: 3709238374390963970
+      bk_explo_smalltwo_11: -5401814959512366201
+      bk_explo_smalltwo_12: -4878702010876006660
+      bk_explo_smalltwo_13: -9128831051106509632
+      bk_explo_smalltwo_14: -7838784521824848576
+      bk_explo_smalltwo_15: 4446011157337222716
+      bk_explo_smalltwo_16: 7940170788945742497
+      bk_explo_smalltwo_17: -6995908314366428553
+      bk_explo_smalltwo_18: 1795810185569949166
+      bk_explo_smalltwo_19: 1843186074428833516
+      bk_explo_smalltwo_2: -7292202401459247990
+      bk_explo_smalltwo_20: -2309564716793032800
+      bk_explo_smalltwo_21: -3627773862904631980
+      bk_explo_smalltwo_22: -8875882118437867493
+      bk_explo_smalltwo_23: -4402951108742275929
+      bk_explo_smalltwo_24: -3006830793841395057
+      bk_explo_smalltwo_25: 4049635079315416540
+      bk_explo_smalltwo_26: 7910197302540268922
+      bk_explo_smalltwo_27: 7975968310950440926
+      bk_explo_smalltwo_28: -1782456921877507039
+      bk_explo_smalltwo_29: 330136459970048206
+      bk_explo_smalltwo_3: -8196312395304976989
+      bk_explo_smalltwo_4: 7157288303852493072
+      bk_explo_smalltwo_5: 2290618586578870551
+      bk_explo_smalltwo_6: 8702125350364620619
+      bk_explo_smalltwo_7: -4909094076430383761
+      bk_explo_smalltwo_8: 1353706875815597041
+      bk_explo_smalltwo_9: -8404656320106549608
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

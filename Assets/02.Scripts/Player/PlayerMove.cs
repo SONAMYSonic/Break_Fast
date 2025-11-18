@@ -35,6 +35,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float _knockbackDistance = 0.7f;
     [SerializeField] private float _knockbackDuration = 0.08f;
 
+    [Header("Car Model")]
+    [SerializeField] private Transform _carModelTransform;
+
     public PlayerState CurrentState { get; private set; } = PlayerState.Idle;
 
     private readonly Transform[] _lanes = new Transform[3];
@@ -89,13 +92,18 @@ public class PlayerMove : MonoBehaviour
             return;
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        {
+            _carModelTransform.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
             DashDirection(-1);
+        }
+            
 
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            _carModelTransform.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             DashDirection(1);
-
-        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-            DashToCenter();
+        }
+            
     }
 
     // 키 방향에 따라 목표 레인을 결정하고 대시 시작
@@ -111,11 +119,6 @@ public class PlayerMove : MonoBehaviour
             desiredLane = Mathf.Clamp(_currentLaneIndex + dir, 0, 2);
 
         StartDash(desiredLane);
-    }
-
-    private void DashToCenter()
-    {
-        StartDash(CenterLaneIndex);
     }
 
     // ---------------- DASH START ----------------
@@ -231,8 +234,6 @@ public class PlayerMove : MonoBehaviour
         _targetLanePosition = null;
         _currentLaneIndex = _targetLaneIndex;
 
-        if (miss)
-            _player.ResetCombo();
     }
 
     // ---------------- IDLE HIT ----------------

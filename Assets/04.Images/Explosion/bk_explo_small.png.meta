@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: f435e12f624cbf1489f18c6f1b794d30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3649186071528310195
+    second: bk_explo_small_0
+  - first:
+      213: 5961859088118295235
+    second: bk_explo_small_1
+  - first:
+      213: -1092727177763104251
+    second: bk_explo_small_2
+  - first:
+      213: -8060015084685125899
+    second: bk_explo_small_3
+  - first:
+      213: -6154982342391643913
+    second: bk_explo_small_4
+  - first:
+      213: -7314648646456046690
+    second: bk_explo_small_5
+  - first:
+      213: 3345582819537418489
+    second: bk_explo_small_6
+  - first:
+      213: 1629573496407601890
+    second: bk_explo_small_7
+  - first:
+      213: 7335325724984662173
+    second: bk_explo_small_8
+  - first:
+      213: -5176632306965753814
+    second: bk_explo_small_9
+  - first:
+      213: -5900667923631261215
+    second: bk_explo_small_10
+  - first:
+      213: 8664157884306045610
+    second: bk_explo_small_11
+  - first:
+      213: 6314144182899138527
+    second: bk_explo_small_12
+  - first:
+      213: -4156503199694013069
+    second: bk_explo_small_13
+  - first:
+      213: 8019001237709670982
+    second: bk_explo_small_14
+  - first:
+      213: -426253068374646635
+    second: bk_explo_small_15
+  - first:
+      213: 2424200544553157173
+    second: bk_explo_small_16
+  - first:
+      213: 2337749273298137144
+    second: bk_explo_small_17
+  - first:
+      213: 2372906189773248785
+    second: bk_explo_small_18
+  - first:
+      213: 8253446381625339388
+    second: bk_explo_small_19
+  - first:
+      213: -1317681735830232010
+    second: bk_explo_small_20
+  - first:
+      213: 9213965486480702109
+    second: bk_explo_small_21
+  - first:
+      213: 3627156238571029796
+    second: bk_explo_small_22
+  - first:
+      213: 9199497064804161795
+    second: bk_explo_small_23
+  - first:
+      213: -2415993123831826159
+    second: bk_explo_small_24
+  - first:
+      213: -2024986616662540079
+    second: bk_explo_small_25
+  - first:
+      213: 7262018263396237777
+    second: bk_explo_small_26
+  - first:
+      213: -2859225575193410355
+    second: bk_explo_small_27
+  - first:
+      213: 8685619490910057379
+    second: bk_explo_small_28
+  - first:
+      213: 4790271746683932690
+    second: bk_explo_small_29
+  - first:
+      213: 482569077617058988
+    second: bk_explo_small_30
+  - first:
+      213: -8549534923978281364
+    second: bk_explo_small_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bk_explo_small_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 9
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b58fb8d56384a230800000000000000
+      internalID: 3649186071528310195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3caa93cd047ccb250800000000000000
+      internalID: 5961859088118295235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 11
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ad30ddb6ad5d0f0800000000000000
+      internalID: -1092727177763104251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f69d09fbf2152090800000000000000
+      internalID: -8060015084685125899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 9
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0c1fa8b2c159aa0800000000000000
+      internalID: -6154982342391643913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b023b8fc52d7a90800000000000000
+      internalID: -7314648646456046690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 8
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f87d2549d5ed6e20800000000000000
+      internalID: 3345582819537418489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 7
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e234cc06786d9610800000000000000
+      internalID: 1629573496407601890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_8
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 6
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98de75f1ef4cc560800000000000000
+      internalID: 7335325724984662173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 6
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20de720858e828b0800000000000000
+      internalID: -5176632306965753814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_10
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 5
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9ba6a59cd9c1ea0800000000000000
+      internalID: -5900667923631261215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 5
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa36fbe0b54d3870800000000000000
+      internalID: 8664157884306045610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_12
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 5
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf5d4a3ea850a750800000000000000
+      internalID: 6314144182899138527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_13
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 5
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37db67aac522156c0800000000000000
+      internalID: -4156503199694013069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_14
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 5
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a4a13a327394f60800000000000000
+      internalID: 8019001237709670982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_15
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 5
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590eb1bb715a51af0800000000000000
+      internalID: -426253068374646635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_16
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 5
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53246622d8d74a120800000000000000
+      internalID: 2424200544553157173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_17
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 5
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830fcd0049a517020800000000000000
+      internalID: 2337749273298137144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_18
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 5
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11992ce7b914ee020800000000000000
+      internalID: 2372906189773248785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_19
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 5
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfde28561c12a8270800000000000000
+      internalID: 8253446381625339388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_20
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 5
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634a1d05177a6bde0800000000000000
+      internalID: -1317681735830232010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_21
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 5
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a3462dac49edf70800000000000000
+      internalID: 9213965486480702109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_22
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 5
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4254ed8a16f365230800000000000000
+      internalID: 3627156238571029796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_23
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 5
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30996e3e6dd2baf70800000000000000
+      internalID: 9199497064804161795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_24
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 6
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119b73aed0ba87ed0800000000000000
+      internalID: -2415993123831826159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_25
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 7
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0c8e6a66dc5e3e0800000000000000
+      internalID: -2024986616662540079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_26
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 8
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1c12e722fd7c460800000000000000
+      internalID: 7262018263396237777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_27
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 8
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc482e9fc7df158d0800000000000000
+      internalID: -2859225575193410355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_28
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 9
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a337e998e4898870800000000000000
+      internalID: 8685619490910057379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_29
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 9
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2109fae06c67a7240800000000000000
+      internalID: 4790271746683932690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_30
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 9
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4e3f2f40e62b600800000000000000
+      internalID: 482569077617058988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bk_explo_small_31
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e6a75b843f95980800000000000000
+      internalID: -8549534923978281364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bk_explo_small_0: 3649186071528310195
+      bk_explo_small_1: 5961859088118295235
+      bk_explo_small_10: -5900667923631261215
+      bk_explo_small_11: 8664157884306045610
+      bk_explo_small_12: 6314144182899138527
+      bk_explo_small_13: -4156503199694013069
+      bk_explo_small_14: 8019001237709670982
+      bk_explo_small_15: -426253068374646635
+      bk_explo_small_16: 2424200544553157173
+      bk_explo_small_17: 2337749273298137144
+      bk_explo_small_18: 2372906189773248785
+      bk_explo_small_19: 8253446381625339388
+      bk_explo_small_2: -1092727177763104251
+      bk_explo_small_20: -1317681735830232010
+      bk_explo_small_21: 9213965486480702109
+      bk_explo_small_22: 3627156238571029796
+      bk_explo_small_23: 9199497064804161795
+      bk_explo_small_24: -2415993123831826159
+      bk_explo_small_25: -2024986616662540079
+      bk_explo_small_26: 7262018263396237777
+      bk_explo_small_27: -2859225575193410355
+      bk_explo_small_28: 8685619490910057379
+      bk_explo_small_29: 4790271746683932690
+      bk_explo_small_3: -8060015084685125899
+      bk_explo_small_30: 482569077617058988
+      bk_explo_small_31: -8549534923978281364
+      bk_explo_small_4: -6154982342391643913
+      bk_explo_small_5: -7314648646456046690
+      bk_explo_small_6: 3345582819537418489
+      bk_explo_small_7: 1629573496407601890
+      bk_explo_small_8: 7335325724984662173
+      bk_explo_small_9: -5176632306965753814
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

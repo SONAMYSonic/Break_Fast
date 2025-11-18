@@ -7,15 +7,15 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Transform _rightSpawnPoint;
 
     [Header("Enemy Target")]
-    [SerializeField] private Transform _centerTargetPosition;   // ¾ÀÀÇ CenterPos °°Àº ÁöÁ¡
+    [SerializeField] private Transform _centerTargetPosition;   // ì”¬ì˜ CenterPos ê°™ì€ ì§€ì 
 
     [Header("Enemy Prefab")]
-    [SerializeField] private GameObject _enemyPrefab;
+    [SerializeField] public GameObject[] EnemyPrefabs;
 
     [Header("Spawn Settings")]
     [SerializeField] private float _startSpawnInterval = 2f;
     [SerializeField] private float _minSpawnInterval = 0.4f;
-    [SerializeField] private float _difficultyRampDuration = 60f;   // ÀÌ ½Ã°£ µ¿¾È Á¡Á¡ ½ºÆù °£°İ °¨¼Ò
+    [SerializeField] private float _difficultyRampDuration = 60f;   // ì´ ì‹œê°„ ë™ì•ˆ ì ì  ìŠ¤í° ê°„ê²© ê°ì†Œ
 
     private float _spawnTimer;
     private float _elapsedTime;
@@ -60,29 +60,13 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        if (_enemyPrefab == null)
-        {
-            Debug.LogWarning("[EnemySpawner] Enemy prefab is not assigned.");
-            return;
-        }
-
-        if (_leftSpawnPoint == null || _rightSpawnPoint == null)
-        {
-            Debug.LogWarning("[EnemySpawner] Spawn points are not assigned.");
-            return;
-        }
-
-        if (_centerTargetPosition == null)
-        {
-            Debug.LogWarning("[EnemySpawner] Center target position is not assigned.");
-            return;
-        }
-
         var spawnOnLeft = Random.value < 0.5f;
         var spawnPoint = spawnOnLeft ? _leftSpawnPoint : _rightSpawnPoint;
 
+        int enemyIndex = Random.Range(0, EnemyPrefabs.Length);
+
         var enemyObject = Instantiate(
-            _enemyPrefab,
+            EnemyPrefabs[enemyIndex],
             spawnPoint.position,
             Quaternion.identity);
 

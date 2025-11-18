@@ -55,6 +55,7 @@ public class PlayerCarController : MonoBehaviour
         TakeDamage(_selfDamageOnAttack);
         _gameManager?.OnEnemyHit(Combo);
         _cameraShake?.Shake();
+        SoundManager.Instance?.PlaySfx(SfxType.DashHit);
     }
 
     // 가만히 있다가 적에게 들이받힌 경우
@@ -64,6 +65,7 @@ public class PlayerCarController : MonoBehaviour
         _cameraShake?.Shake();
         ResetCombo();
         Debug.Log("으악! 적에게 들이받혔습니다!");
+        SoundManager.Instance?.PlaySfx(SfxType.IdleHit);
     }
 
     public void TakeDamage(int damage)
@@ -94,7 +96,7 @@ public class PlayerCarController : MonoBehaviour
         _gameManager?.OnComboChanged(Combo);
     }
 
-    private void ResetCombo()
+    public void ResetCombo()
     {
         if (Combo <= 0)
         {

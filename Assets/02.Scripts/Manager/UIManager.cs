@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class UIManager : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScore(int score, int bestScore)
     {
-        if (scoreText != null) scoreText.text = $"Current: {score}";
+        if (scoreText != null) scoreText.text = $"Score: {score}";
         if (bestScoreText != null) bestScoreText.text = $"BEST {bestScore}";
     }
 
@@ -38,6 +39,8 @@ public class UIManager : MonoBehaviour
         {
             comboText.gameObject.SetActive(true);
             comboText.text = $"COMBO! x{combo}";
+            comboText.transform.DOKill(true); // 이전 애니메이션이 있으면 제거
+            comboText.transform.DOPunchScale(Vector3.one * 2f, 0.2f, 3, 1);
             // TODO: 애니메이션(Scale 튕기기)
         }
     }
@@ -46,7 +49,7 @@ public class UIManager : MonoBehaviour
     {
         if (gameOverPanel == null) return;
         gameOverPanel.SetActive(true);
-        if (gameOverScoreText != null) gameOverScoreText.text = $"SCORE {score}";
+        if (gameOverScoreText != null) gameOverScoreText.text = $"SCORE {score:N0}";
         if (gameOverBestScoreText != null) gameOverBestScoreText.text = $"BEST {bestScore}";
     }
 

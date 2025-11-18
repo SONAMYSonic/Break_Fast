@@ -21,12 +21,15 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private Transform _rightPosition;
 
     [Header("Move Settings")]
-    [SerializeField] private float _moveSpeed = 15f;
+    [SerializeField] private float _moveSpeed = 20f;
+    [SerializeField] private float _moveMaxDistanceX = 2f;  // 키 1번당 최대 대시 거리
 
-    [Header("Collision / Hit Box")]
+    [Header("Hit Box Settings")]
     [SerializeField] private LayerMask _enemyLayerMask;
     [SerializeField] private Vector2 _hitBoxSize = new Vector2(1.5f, 1.0f);
-    [SerializeField] private float _idleHitCooldown = 0.3f;
+
+    [Header("Idle Hit Settings")]
+    [SerializeField] private float _idleHitCooldown = 0.25f;
 
     [Header("Knockback Settings")]
     [SerializeField] private float _knockbackDistance = 0.7f;
@@ -38,15 +41,18 @@ public class PlayerMove : MonoBehaviour
     private int _currentLaneIndex = CenterLaneIndex;
     private int _targetLaneIndex = CenterLaneIndex;
 
-    private Transform _targetPosition;
+    private Transform _targetLanePosition;
+
+    private Vector3 _dashStartPos;    // 대시 시작 지점
     private float _idleHitTimer;
-    private bool _hitDuringThisMove;
+    private bool _hitDuringDash;
 
     private PlayerCarController _player;
 
-    private Vector3 _knockbackStartPosition;
-    private Vector3 _knockbackEndPosition;
-    private float _knockbackTimer;
+    // knockback
+    private Vector3 _knockStart;
+    private Vector3 _knockEnd;
+    private float _knockTimer;
 
     private void Awake()
     {
@@ -54,18 +60,8 @@ public class PlayerMove : MonoBehaviour
         _lanes[CenterLaneIndex] = _centerPosition;
         _lanes[RightLaneIndex] = _rightPosition;
 
-        _currentLaneIndex = CenterLaneIndex;
-
-        if (_centerPosition != null)
-        {
-            transform.position = _centerPosition.position;
-        }
-
+        transform.position = _centerPosition.position;
         _player = GetComponent<PlayerCarController>();
-        if (_player == null)
-        {
-            Debug.LogError("[PlayerMove] PlayerCarController not found on the same GameObject.");
-        }
     }
 
     private void Update()
@@ -75,9 +71,8 @@ public class PlayerMove : MonoBehaviour
         switch (CurrentState)
         {
             case PlayerState.Moving:
-                HandleMovement();
+                HandleDashMovement();
                 break;
-
             case PlayerState.HitStun:
                 HandleKnockback();
                 break;
@@ -86,112 +81,94 @@ public class PlayerMove : MonoBehaviour
         HandleIdleCollision();
     }
 
-
-    // ---------------- Input ----------------
+    // ---------------- INPUT ----------------
 
     private void HandleInput()
     {
         if (CurrentState != PlayerState.Idle)
-        {
             return;
-        }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-        {
-            MoveOneLane(-1);
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-        {
-            MoveOneLane(1);
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-        {
-            MoveToCenterLane();
-        }
+            DashDirection(-1);
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+            DashDirection(1);
+
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            DashToCenter();
     }
 
-    private void MoveOneLane(int direction)
+    // 키 방향에 따라 목표 레인을 결정하고 대시 시작
+    private void DashDirection(int dir)
     {
-        var desiredIndex = Mathf.Clamp(_currentLaneIndex + direction, LeftLaneIndex, RightLaneIndex);
+        int desiredLane = _currentLaneIndex;
 
-        if (desiredIndex == _currentLaneIndex)
-        {
-            // 논리상 이 레인에 있지만, 실제 위치가 어긋나 있다면 다시 그 레인으로 정렬
-            if (IsAtLanePosition(_currentLaneIndex) == false)
-            {
-                SetMoveTarget(_currentLaneIndex);
-            }
+        if (_currentLaneIndex == LeftLaneIndex && dir > 0)
+            desiredLane = RightLaneIndex;
+        else if (_currentLaneIndex == RightLaneIndex && dir < 0)
+            desiredLane = LeftLaneIndex;
+        else
+            desiredLane = Mathf.Clamp(_currentLaneIndex + dir, 0, 2);
 
-            return;
-        }
-
-        SetMoveTarget(desiredIndex);
+        StartDash(desiredLane);
     }
 
-    private void MoveToCenterLane()
+    private void DashToCenter()
     {
-        if (_currentLaneIndex == CenterLaneIndex)
-        {
-            if (IsAtLanePosition(CenterLaneIndex) == false)
-            {
-                SetMoveTarget(CenterLaneIndex);
-            }
-
-            return;
-        }
-
-        SetMoveTarget(CenterLaneIndex);
+        StartDash(CenterLaneIndex);
     }
 
-    private void SetMoveTarget(int laneIndex)
-    {
-        var laneTransform = _lanes[laneIndex];
-        if (laneTransform == null)
-        {
-            return;
-        }
+    // ---------------- DASH START ----------------
 
+    private void StartDash(int laneIndex)
+    {
         _targetLaneIndex = laneIndex;
-        _targetPosition = laneTransform;
-        _hitDuringThisMove = false;
+        _targetLanePosition = _lanes[laneIndex];
+
+        _dashStartPos = transform.position;
+        _hitDuringDash = false;
+
         CurrentState = PlayerState.Moving;
     }
 
-    // ---------------- Movement & Attack ----------------
+    // ---------------- DASH MOVEMENT ----------------
 
-    private void HandleMovement()
+    private void HandleDashMovement()
     {
-        if (CurrentState != PlayerState.Moving || _targetPosition == null)
-        {
+        if (_targetLanePosition == null)
             return;
-        }
 
-        var nextPosition = Vector3.MoveTowards(
+        // 대시 이동
+        Vector3 nextPos = Vector3.MoveTowards(
             transform.position,
-            _targetPosition.position,
+            _targetLanePosition.position,
             _moveSpeed * Time.deltaTime);
 
-        transform.position = nextPosition;
+        transform.position = nextPos;
 
-        // 이동 중 박치기
-        if (TryHitEnemyWhileMoving())
+        // 1) 이동 중 박치기 시도
+        if (TryDashHit())
+            return;
+
+        // 2) 대시 이동 거리 초과 → MISS 판정
+        float dashDistance = Mathf.Abs(transform.position.x - _dashStartPos.x);
+        if (dashDistance >= _moveMaxDistanceX)
         {
+            EndDash(miss: true);
             return;
         }
 
-        // 적을 못 만나고 목표 레인 도착
-        var distanceToTarget = Vector3.Distance(transform.position, _targetPosition.position);
-        if (distanceToTarget <= PositionTolerance)
+        // 3) 목표 레인 중심까지 도달 → MISS 여부 판정
+        float distToLane = Vector3.Distance(transform.position, _targetLanePosition.position);
+        if (distToLane <= PositionTolerance)
         {
-            transform.position = _targetPosition.position;
-            _currentLaneIndex = _targetLaneIndex;
-
-            CurrentState = PlayerState.Idle;
-            _targetPosition = null;
+            EndDash(!_hitDuringDash); // 히트 안 했으면 miss
         }
     }
 
-    private bool TryHitEnemyWhileMoving()
+    // ---------------- DASH HIT ----------------
+
+    private bool TryDashHit()
     {
         var hits = Physics2D.OverlapBoxAll(
             transform.position,
@@ -200,198 +177,149 @@ public class PlayerMove : MonoBehaviour
             _enemyLayerMask);
 
         if (hits.Length == 0)
-        {
             return false;
-        }
 
-        // 넉백 방향 계산용 (가장 먼저 맞은 적 기준)
-        float? contactDirection = null;
+        EnemyController closestEnemy = null;
+        EnemyMove closestMove = null;
+        float best = float.MaxValue;
 
-        foreach (var hit in hits)
+        foreach (var h in hits)
         {
-            var enemy = hit.GetComponent<EnemyController>();
-            if (enemy == null)
+            var e = h.GetComponent<EnemyController>();
+            if (e == null) continue;
+
+            float d = Mathf.Abs(e.transform.position.x - transform.position.x);
+            if (d < best)
             {
-                continue;
-            }
-
-            // 1) 데미지 계산
-            enemy.OnHitByPlayer(_player.AttackPower, true);
-
-            // 2) 적 넉백
-            var enemyMove = hit.GetComponent<EnemyMove>();
-            if (enemyMove != null)
-            {
-                if (contactDirection == null)
-                {
-                    // 적이 플레이어의 오른쪽에 있으면 → 적은 오른쪽(+1)으로 넉백
-                    // 적이 왼쪽에 있으면 → 적은 왼쪽(-1)으로 넉백
-                    contactDirection =
-                        enemy.transform.position.x - transform.position.x > 0f
-                            ? 1f
-                            : -1f;
-                }
-
-                enemyMove.StartKnockback(contactDirection.Value);
+                best = d;
+                closestEnemy = e;
+                closestMove = h.GetComponent<EnemyMove>();
             }
         }
 
-        // 3) 플레이어 자기 연출
-        _hitDuringThisMove = true;
-        _player?.OnDashHitEnemy();
+        if (closestEnemy == null)
+            return false;
 
-        // 4) 공격 직후에는 Idle 피격 판정 잠시 비활성화
-        _idleHitTimer = _idleHitCooldown;
+        // HIT 처리
+        closestEnemy.OnHitByPlayer(_player.AttackPower, true);
+        _player.OnDashHitEnemy();
+        _hitDuringDash = true;
 
-        // 5) 플레이어 넉백 (대시 반대 방향)
-        if (contactDirection != null)
-        {
-            // 적이 오른쪽(+1)으로 밀려났다면 → 플레이어는 왼쪽(-1)으로 넉백
-            // 적이 왼쪽(-1)으로 밀려났다면 → 플레이어는 오른쪽(+1)으로 넉백
-            float playerKnockDirection = -contactDirection.Value;
-            StartKnockback(playerKnockDirection);
-        }
-        else
-        {
-            // 혹시 모를 방어: 적이 하나도 없는데 여기 들어온 경우
-            CurrentState = PlayerState.Idle;
-        }
+        // 적/플레이어 넉백
+        float dir = Mathf.Sign(closestEnemy.transform.position.x - transform.position.x);
 
-        _targetPosition = null;
+        if (closestMove != null)
+            closestMove.StartKnockback(dir);
+
+        StartKnockback(-dir);
+
+        // ★ 여기서 더 이상 EndDash(false)를 호출하지 않는다!
+        //    → HitStun 상태 동안 넉백 모션이 보이도록 유지.
+
+        // 대시는 여기서 끝난 것으로 처리: 목표 레인 타겟 제거 & 레인 인덱스만 업데이트
+        _targetLanePosition = null;
         _currentLaneIndex = _targetLaneIndex;
 
         return true;
     }
 
-    // ---------------- Idle Hit (가만히 있을 때 들이받힘) ----------------
+    // ---------------- DASH END (MISS 전용) ----------------
+
+    private void EndDash(bool miss)
+    {
+        CurrentState = PlayerState.Idle;
+        _targetLanePosition = null;
+        _currentLaneIndex = _targetLaneIndex;
+
+        if (miss)
+            _player.ResetCombo();
+    }
+
+    // ---------------- IDLE HIT ----------------
 
     private void HandleIdleCollision()
     {
         if (CurrentState != PlayerState.Idle)
-        {
             return;
-        }
 
-        if (_idleHitTimer > 0f)
+        if (_idleHitTimer > 0)
         {
             _idleHitTimer -= Time.deltaTime;
             return;
         }
 
-        var hits = Physics2D.OverlapBoxAll(
-            transform.position,
-            _hitBoxSize,
-            0f,
-            _enemyLayerMask);
-
+        var hits = Physics2D.OverlapBoxAll(transform.position, _hitBoxSize, 0, _enemyLayerMask);
         if (hits.Length == 0)
-        {
             return;
-        }
 
-        EnemyController enemyForKnockback = null;
-        EnemyMove enemyMoveForKnockback = null;
-        float closestDistance = float.MaxValue;
+        EnemyController hitEnemy = null;
+        EnemyMove hitMove = null;
+        float best = float.MaxValue;
 
-        foreach (var hit in hits)
+        foreach (var h in hits)
         {
-            var enemy = hit.GetComponent<EnemyController>();
-            if (enemy == null)
-            {
-                continue;
-            }
+            var e = h.GetComponent<EnemyController>();
+            if (e == null) continue;
 
-            // 플레이어는 가만히 있고, 적이 들이받은 상황 → 적은 반값 데미지
-            enemy.OnHitByPlayer(_player.AttackPower, false);
+            // 플레이어가 가만히 있을 때 들이받힌 상황 → 반값 데미지
+            e.OnHitByPlayer(_player.AttackPower, false);
 
-            var distance = Mathf.Abs(hit.transform.position.x - transform.position.x);
-            if (distance < closestDistance)
+            float d = Mathf.Abs(e.transform.position.x - transform.position.x);
+            if (d < best)
             {
-                closestDistance = distance;
-                enemyForKnockback = enemy;
-                enemyMoveForKnockback = hit.GetComponent<EnemyMove>();
+                best = d;
+                hitEnemy = e;
+                hitMove = h.GetComponent<EnemyMove>();
             }
         }
 
-        _player?.OnIdleHitByEnemy();
+        _player.OnIdleHitByEnemy();
 
-        if (enemyForKnockback != null)
+        if (hitEnemy != null)
         {
-            // 플레이어 기준 넉백 방향
-            float playerKnockDirection =
-                transform.position.x - enemyForKnockback.transform.position.x > 0f
-                    ? 1f
-                    : -1f;
+            float dir = Mathf.Sign(transform.position.x - hitEnemy.transform.position.x);
+            StartKnockback(dir);
 
-            // 플레이어 넉백
-            StartKnockback(playerKnockDirection);
-
-            // 적 넉백 (플레이어와 반대 방향)
-            if (enemyMoveForKnockback != null)
-            {
-                float enemyKnockDirection = -playerKnockDirection;
-                enemyMoveForKnockback.StartKnockback(enemyKnockDirection);
-            }
+            if (hitMove != null)
+                hitMove.StartKnockback(-dir);
         }
 
         _idleHitTimer = _idleHitCooldown;
     }
 
+    // ---------------- KNOCKBACK ----------------
 
-    // ---------------- Helpers ----------------
-
-    private bool IsAtLanePosition(int laneIndex)
+    private void StartKnockback(float dir)
     {
-        var laneTransform = _lanes[laneIndex];
-        if (laneTransform == null)
+        _knockStart = transform.position;
+        _knockEnd = _knockStart + new Vector3(_knockbackDistance * dir, 0, 0);
+
+        _knockTimer = _knockbackDuration;
+        CurrentState = PlayerState.HitStun;
+    }
+
+    private void HandleKnockback()
+    {
+        if (_knockTimer <= 0)
         {
-            return false;
+            CurrentState = PlayerState.Idle;
+            return;
         }
 
-        var distance = Vector3.Distance(transform.position, laneTransform.position);
-        return distance <= PositionTolerance;
+        _knockTimer -= Time.deltaTime;
+
+        float t = 1f - (_knockTimer / _knockbackDuration);
+        transform.position = Vector3.Lerp(_knockStart, _knockEnd, t);
+
+        if (_knockTimer <= 0)
+            CurrentState = PlayerState.Idle;
     }
+
+    // ---------------- DEBUG ----------------
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(transform.position, _hitBoxSize);
     }
-
-    private void StartKnockback(float direction)
-    {
-        _knockbackStartPosition = transform.position;
-
-        _knockbackEndPosition = _knockbackStartPosition +
-                                new Vector3(_knockbackDistance * direction, 0f, 0f);
-
-        _knockbackTimer = _knockbackDuration;
-        CurrentState = PlayerState.HitStun;
-
-        // 이동 중이었을 가능성은 없지만, 혹시 모를 이전 타겟 클리어
-        _targetPosition = null;
-    }
-
-    private void HandleKnockback()
-    {
-        if (_knockbackTimer <= 0f || _knockbackDuration <= 0f)
-        {
-            CurrentState = PlayerState.Idle;
-            return;
-        }
-
-        _knockbackTimer -= Time.deltaTime;
-
-        var t = 1f - (_knockbackTimer / _knockbackDuration);
-        t = Mathf.Clamp01(t);
-
-        var nextPosition = Vector3.Lerp(_knockbackStartPosition, _knockbackEndPosition, t);
-        transform.position = nextPosition;
-
-        if (_knockbackTimer <= 0f)
-        {
-            CurrentState = PlayerState.Idle;
-        }
-    }
-
 }

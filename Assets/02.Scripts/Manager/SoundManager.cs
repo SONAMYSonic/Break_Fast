@@ -29,6 +29,9 @@ public class SoundManager : MonoBehaviour
     public AudioSource UltimateVoiceSource;
     public AudioClip[] UltimateVoiceClips;
 
+    [Header("플레이어 피격 사운드")]
+    public AudioClip[] PlayerHitVoiceClips;
+
     [Header("Countdown Voices")]
     [SerializeField] private AudioSource _countdownSource;
     [SerializeField] private AudioClip[] _countdownVoiceClips; // 3,2,1 용
@@ -125,6 +128,12 @@ public class SoundManager : MonoBehaviour
     {
         if (UltimateVoiceSource == null || UltimateVoiceClips.Length == 0) return;
         var clip = UltimateVoiceClips[UnityEngine.Random.Range(0, UltimateVoiceClips.Length)];
+        UltimateVoiceSource.PlayOneShot(clip);
+    }
+
+    public void PlayerHitVoice()
+    {
+        var clip = PlayerHitVoiceClips[UnityEngine.Random.Range(0, PlayerHitVoiceClips.Length)];
         UltimateVoiceSource.PlayOneShot(clip);
     }
 

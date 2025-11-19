@@ -38,6 +38,9 @@ public class PlayerMove : MonoBehaviour
     [Header("Car Model")]
     [SerializeField] private Transform _carModelTransform;
 
+    [Header("Camera")]
+    [SerializeField] private CameraShake _cameraShake;
+
     [SerializeField] private bool _canControl = true;
 
     public PlayerState CurrentState { get; private set; } = PlayerState.Idle;
@@ -54,6 +57,9 @@ public class PlayerMove : MonoBehaviour
 
     private PlayerCarController _player;
 
+    private bool _guideHidden = false;
+    private UIManager _uiManager;
+
     // knockback
     private Vector3 _knockStart;
     private Vector3 _knockEnd;
@@ -67,6 +73,10 @@ public class PlayerMove : MonoBehaviour
 
         transform.position = _centerPosition.position;
         _player = GetComponent<PlayerCarController>();
+        _uiManager = FindFirstObjectByType<UIManager>();
+
+        if (_cameraShake == null)
+            _cameraShake = FindFirstObjectByType<CameraShake>();
     }
 
     public void SetCanControl(bool canControl)
@@ -106,6 +116,8 @@ public class PlayerMove : MonoBehaviour
             _carModelTransform.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
             DashDirection(-1);
             //SoundManager.Instance.PlayCarDash();
+            _guideHidden = true;
+            _uiManager?.SetKeyGuideActive(false);
         }
             
 
@@ -114,6 +126,8 @@ public class PlayerMove : MonoBehaviour
             _carModelTransform.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             DashDirection(1);
             //SoundManager.Instance.PlayCarDash();
+            _guideHidden = true;
+            _uiManager?.SetKeyGuideActive(false);
         }
             
     }
@@ -144,6 +158,9 @@ public class PlayerMove : MonoBehaviour
         _hitDuringDash = false;
 
         CurrentState = PlayerState.Moving;
+
+        // ★ 대시 시작 시 카메라 약하게 흔들기
+        _cameraShake?.ShakeOnPlayerMove();
     }
 
     // ---------------- DASH MOVEMENT ----------------

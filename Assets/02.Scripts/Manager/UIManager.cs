@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     public GameObject GameOverPostIT;
     public GameObject RestartButton;
     public GameObject TitleButton;
+    public GameObject KeyGuide;
 
     [Header("Ultimate UI")]
     [SerializeField] private GameObject ultimateReadyHint;   // "SPACE" 아이콘/텍스트
@@ -131,5 +132,11 @@ public class UIManager : MonoBehaviour
             countdownText.gameObject.SetActive(true);
             countdownText.text = text;
         }
+    }
+
+    public void SetKeyGuideActive(bool active)
+    {
+        if (KeyGuide == null) return;
+        KeyGuide.SetActive(active);
     }
 }

@@ -151,6 +151,7 @@ public class PlayerCarController : MonoBehaviour
         ResetCombo();
         Debug.Log("으악! 적에게 들이받혔습니다!");
         SoundManager.Instance?.PlaySfx(SfxType.IdleHit);
+        SoundManager.Instance?.PlayerHitVoice();
     }
 
     public void TakeDamage(int damage)
